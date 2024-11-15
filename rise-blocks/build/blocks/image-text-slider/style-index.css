@@ -6,11 +6,11 @@
   align-items: center;
 }
 .rise-blocks-image-text-slider .slider-image-wrapper {
-  flex: 0 0 60%;
-  padding-right: 40px;
+  flex: 0 0 55%;
+  padding-right: 30px;
 }
 .rise-blocks-image-text-slider .slider-text-wrapper {
-  flex: 0 0 40%;
+  flex: 0 0 45%;
   color: #fff;
   text-align: left;
 }

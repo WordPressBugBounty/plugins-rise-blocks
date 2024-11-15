@@ -42,6 +42,9 @@
 .rise-blocks-image-slider img {
   display: block;
   max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
 }
 .rise-blocks-image-slider ul.slick-dots {
   position: absolute;

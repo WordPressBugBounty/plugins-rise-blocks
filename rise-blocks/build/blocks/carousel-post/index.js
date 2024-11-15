@@ -60,7 +60,10 @@ const Edit = props => {
       headingTypo,
       bgColor,
       color = "#ffffff",
-      title
+      title,
+      contentTypo,
+      enableContent,
+      excerptLength
     },
     setAttributes,
     latestPosts,
@@ -286,6 +289,10 @@ const Edit = props => {
       ...(0,_helpers__WEBPACK_IMPORTED_MODULE_12__.getTypoStyle)(metaTypo),
       color: color
     };
+    const contentStyle = {
+      color: color,
+      ...(0,_helpers__WEBPACK_IMPORTED_MODULE_12__.getTypoStyle)(contentTypo)
+    };
     return (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
       key: i,
       className: `${_constants__WEBPACK_IMPORTED_MODULE_11__.prefix}-news-2-card-wrapper`
@@ -309,7 +316,10 @@ const Edit = props => {
       style: {
         backgroundColor: color
       }
-    }))), getTitle(post, i), meta(post)))));
+    }))), getTitle(post, i), enableContent && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+      style: contentStyle,
+      className: `${_constants__WEBPACK_IMPORTED_MODULE_11__.prefix}-banner-text-content`
+    }, (0,_helpers__WEBPACK_IMPORTED_MODULE_12__.wordTrim)(post["rise-blocks_excerpt"], excerptLength)), meta(post)))));
   }))), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_inspector__WEBPACK_IMPORTED_MODULE_10__["default"], {
     ...props
   }));
@@ -375,6 +385,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _custom_control_dimension__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../../../custom-control/dimension */ "./src/custom-control/dimension.js");
 /* harmony import */ var _block_json__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../block.json */ "./src/blocks/carousel-post/block.json");
 /* harmony import */ var _components_exporter__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../../../components/exporter */ "./src/components/exporter.js");
+/* harmony import */ var _helpers__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../../../helpers */ "./src/helpers/index.js");
+
 
 
 
@@ -433,7 +445,10 @@ const InspectorPanel = props => {
       padding,
       arrowBgColor,
       arrowColor,
-      slidesToShow
+      slidesToShow,
+      enableContent,
+      contentTypo,
+      excerptLength
     },
     setAttributes,
     clientId
@@ -494,7 +509,7 @@ const InspectorPanel = props => {
     label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Slides To Show', 'rise-blocks'),
     allowReset: true,
     min: 1,
-    max: 4,
+    max: 8,
     value: slidesToShow,
     initialPosition: 3,
     onChange: slidesToShow => setAttributes({
@@ -503,7 +518,12 @@ const InspectorPanel = props => {
   })), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.PanelBody, {
     title: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Content', 'rise-blocks'),
     initialOpen: false
-  }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_custom_control__WEBPACK_IMPORTED_MODULE_8__.SwitchControl, {
+  }, enableContent && (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_custom_control__WEBPACK_IMPORTED_MODULE_8__.ExcerptLengthControl, {
+    value: excerptLength,
+    onChange: excerptLength => setAttributes({
+      excerptLength
+    })
+  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_custom_control__WEBPACK_IMPORTED_MODULE_8__.SwitchControl, {
     label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Enable Title', 'rise-blocks'),
     checked: enableTitle,
     onChange: enableTitle => {
@@ -525,6 +545,14 @@ const InspectorPanel = props => {
     onChange: enableAuthor => {
       setAttributes({
         enableAuthor
+      });
+    }
+  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_custom_control__WEBPACK_IMPORTED_MODULE_8__.SwitchControl, {
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Enable Content', 'rise-blocks'),
+    checked: enableContent,
+    onChange: enableContent => {
+      setAttributes({
+        enableContent
       });
     }
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_custom_control__WEBPACK_IMPORTED_MODULE_8__.SwitchControl, {
@@ -554,6 +582,13 @@ const InspectorPanel = props => {
     defaultValue: _block_json__WEBPACK_IMPORTED_MODULE_13__.attributes.headingTypo["default"],
     onChange: headingTypo => setAttributes({
       headingTypo
+    })
+  }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("hr", null), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_custom_control_typography__WEBPACK_IMPORTED_MODULE_10__["default"], {
+    label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Content', 'rise-block'),
+    value: contentTypo,
+    defaultValue: _block_json__WEBPACK_IMPORTED_MODULE_13__.attributes.contentTypo["default"],
+    onChange: contentTypo => setAttributes({
+      contentTypo
     })
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("hr", null), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)(_custom_control_typography__WEBPACK_IMPORTED_MODULE_10__["default"], {
     label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Title', 'rise-block'),
@@ -589,7 +624,7 @@ const InspectorPanel = props => {
     }, {
       value: bgColor,
       onChange: bgColor => setAttributes({
-        bgColor
+        bgColor: (0,_helpers__WEBPACK_IMPORTED_MODULE_15__.isUndefined)(bgColor) ? '' : bgColor
       }),
       label: (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Background Color', 'rise-blocks')
     }]
@@ -2515,13 +2550,13 @@ const svg = {
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("g", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
     d: "m93.71 50.29h27.79a1.75 1.75 0 0 0 1.75-1.75v-11.56a6.1 6.1 0 0 0 -5.2-6.017 12.024 12.024 0 0 0 .817-1.921 11.83 11.83 0 1 0 -21.785 1.793c.023.044.051.084.075.128a6.1 6.1 0 0 0 -5.2 6.017v2.584l-4.095 2.285v-23.349a13.765 13.765 0 0 0 -13.747-13.75h-55.615a13.765 13.765 0 0 0 -13.75 13.75v91a13.765 13.765 0 0 0 13.75 13.75h55.615a13.765 13.765 0 0 0 13.75-13.75v-23.35l7.967 4.45a11.749 11.749 0 0 0 1.254 4.354c.024.046.053.088.077.133a6.1 6.1 0 0 0 -5.2 6.017v11.55a1.75 1.75 0 0 0 1.75 1.75h5.487.039s.026 0 .039 0h16.654.039s.025 0 .038 0h5.491a1.75 1.75 0 0 0 1.75-1.75v-11.554a6.093 6.093 0 0 0 -5.2-6.017 12 12 0 0 0 .819-1.926 11.822 11.822 0 1 0 -22.743-6.4l-8.263-4.611v-36.288l4.095-2.285v4.967a1.75 1.75 0 0 0 1.752 1.75zm26.04 50.81v9.8h-2.027v-3.507a1.75 1.75 0 0 0 -3.5 0v3.507h-13.232v-3.507a1.75 1.75 0 0 0 -3.5 0v3.507h-2.031v-9.8a2.6 2.6 0 0 1 2.6-2.59h1.829a11.786 11.786 0 0 0 15.42 0h1.851a2.593 2.593 0 0 1 2.59 2.59zm-15.95-18.965a8.335 8.335 0 1 1 -1.975 13.395l-.023-.021a8.317 8.317 0 0 1 2-13.374zm-85.3-73.885h55.615a10.264 10.264 0 0 1 10.2 9.189h-76a10.264 10.264 0 0 1 10.185-9.189zm55.615 111.5h-55.615a10.261 10.261 0 0 1 -10.25-10.25v-6.917h76.115v6.917a10.261 10.261 0 0 1 -10.25 10.25zm10.25-20.667h-76.115v-78.144h76.115v22.861l-12.386 6.915q-.283-.546-.589-1.076a1.747 1.747 0 0 0 -.219-.38 29.033 29.033 0 0 0 -16.823-13.03 1.734 1.734 0 0 0 -.234-.067 28.775 28.775 0 0 0 -15.626 0 1.815 1.815 0 0 0 -.207.059 29.034 29.034 0 0 0 -16.838 13.04 1.753 1.753 0 0 0 -.217.376 28.814 28.814 0 0 0 0 28.726 1.753 1.753 0 0 0 .217.376 29.035 29.035 0 0 0 16.857 13.042 1.743 1.743 0 0 0 .217.062 28.774 28.774 0 0 0 15.569 0 1.662 1.662 0 0 0 .222-.064 29.031 29.031 0 0 0 16.86-13.04 1.747 1.747 0 0 0 .219-.38q.306-.531.589-1.076l12.389 6.917zm-36.307-9.733v-9.9h9.142a27.968 27.968 0 0 1 -4.466 9.141 25.292 25.292 0 0 1 -4.676.759zm-8.176-.758a27.948 27.948 0 0 1 -4.466-9.141h9.142v9.9a25.265 25.265 0 0 1 -4.676-.759zm4.676-49.942v9.9h-9.142a27.939 27.939 0 0 1 4.466-9.141 25.265 25.265 0 0 1 4.676-.759zm8.176.758a27.978 27.978 0 0 1 4.466 9.141h-9.142v-9.9a25.292 25.292 0 0 1 4.676.759zm-4.676 36.543v-10.201h11.251a55.473 55.473 0 0 1 -1.219 10.2zm-13.532 0a55.568 55.568 0 0 1 -1.22-10.2h11.252v10.2zm10.032-23.9v10.2h-11.252a55.492 55.492 0 0 1 1.22-10.2zm3.5 10.2v-10.2h10.032a55.441 55.441 0 0 1 1.219 10.2zm12.783-13.7a38.788 38.788 0 0 0 -2.667-7.016 25.585 25.585 0 0 1 8.295 7.016zm-29.067 0h-5.628a25.606 25.606 0 0 1 8.3-7.016 38.788 38.788 0 0 0 -2.672 7.014zm-7.89 3.5h7.062a58.551 58.551 0 0 0 -1.141 10.2h-8.847a25.238 25.238 0 0 1 2.926-10.202zm5.921 13.7a58.529 58.529 0 0 0 1.141 10.2h-7.062a25.238 25.238 0 0 1 -2.926-10.2zm1.969 13.7a38.788 38.788 0 0 0 2.666 7.016 25.6 25.6 0 0 1 -8.294-7.016zm29.067 0h5.628a25.585 25.585 0 0 1 -8.295 7.016 38.743 38.743 0 0 0 2.667-7.016zm7.89-3.5h-7.062a58.519 58.519 0 0 0 1.141-10.2h8.847a25.223 25.223 0 0 1 -2.926 10.2zm-5.921-13.701a58.605 58.605 0 0 0 -1.14-10.2h7.061a25.223 25.223 0 0 1 2.926 10.2zm21.555 17.939-10.955-6.113a28.888 28.888 0 0 0 0-20.151l10.955-6.114zm19.435-62.169a8.331 8.331 0 0 1 9.627 13.371l-.025.025a8.331 8.331 0 1 1 -9.6-13.4zm-8.34 18.96a2.6 2.6 0 0 1 2.6-2.59h1.824a11.786 11.786 0 0 0 15.431 0h1.845a2.593 2.593 0 0 1 2.59 2.59v9.81h-2.027v-3.513a1.75 1.75 0 0 0 -3.5 0v3.513h-13.232v-3.513a1.75 1.75 0 0 0 -3.5 0v3.513h-2.031z",
     "data-original": "#000000",
-    class: "active-path",
+    className: "active-path",
     "data-old_color": "#000000",
     fill: "#32373C"
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
     d: "m46.308 104.413a6.75 6.75 0 1 0 6.75 6.75 6.757 6.757 0 0 0 -6.75-6.75zm0 10a3.25 3.25 0 1 1 3.25-3.25 3.254 3.254 0 0 1 -3.25 3.25z",
     "data-original": "#000000",
-    class: "active-path",
+    className: "active-path",
     "data-old_color": "#000000",
     fill: "#32373C"
   })), ' '),
@@ -14046,7 +14081,7 @@ module.exports = window["wp"]["url"];
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"rise-blocks/carousel-post","keywords":["carousel","slider"],"version":"3.1.1","title":"Carousel Post","category":"rise-blocks","description":"Carousel Post Block is for creating beautiful Gutenberg post grid blocks, post slider blocks and post carousel blocks quickly.","supports":{"html":false},"example":{"name":"rise-blocks/carousel-post","attributes":{"title":"Carousel Post","alignment":"center","postsToShow":5,"order":"desc","orderBy":"date","headingTypo":{"fontFamily":"Roboto","fontSize":{"units":["px","em","rem"],"activeUnit":"px","values":{"desktop":20,"tablet":20,"mobile":20}},"textTransform":"uppercase","fontWeight":700,"lineHeight":{"activeUnit":"","units":[""],"values":{"desktop":"1.2","tablet":"1.2","mobile":"1.2"}}},"titleTypo":{"fontFamily":"Roboto","fontSize":{"units":["px","em","rem"],"activeUnit":"px","values":{"desktop":20,"tablet":20,"mobile":20}},"fontWeight":500,"lineHeight":{"activeUnit":"px","units":["px"],"values":{"desktop":"28","tablet":"28","mobile":"28"}}},"metaTypo":{"fontFamily":"Roboto","fontSize":{"units":["px","em","rem"],"activeUnit":"px","values":{"desktop":12,"tablet":12,"mobile":12}},"fontWeight":400,"lineHeight":{"activeUnit":"","units":[""],"values":{"desktop":"1.2","tablet":"1.2","mobile":"1.2"}}},"padding":{"activeUnit":"px","isLinkActive":true,"properties":["top","right","bottom","left"],"responsiveViews":["desktop","tablet","mobile"],"units":["px","rem"],"values":{"desktop":[20,20,20,20],"tablet":[20,20,20,20],"mobile":[20,20,20,20]}},"enableTitle":true,"enableCategory":true,"enableAuthor":true,"enableDate":true,"imageSize":"full","color":"#ffffff","bgColor":"#0693e3","arrowBgColor":"#000000","arrowColor":"#ffffff","slidesToShow":2,"block_id":"rise-blocks-news-2-block-instance-1-b929ae92-5ae3-4c1f-8e04-9701285182f3"}},"attributes":{"block_id":{"type":"string"},"title":{"type":"string","default":"Carousel Post"},"alignment":{"type":"string","default":"center"},"postsToShow":{"type":"number","default":5},"order":{"type":"string","default":"desc"},"orderBy":{"type":"string","default":"date"},"categories":{"type":"string"},"headingTypo":{"type":"object","default":{"fontFamily":"Roboto","fontSize":{"units":["px","em","rem"],"activeUnit":"px","values":{"desktop":20,"tablet":20,"mobile":20}},"textTransform":"uppercase","fontWeight":700,"lineHeight":{"activeUnit":"","units":[""],"values":{"desktop":"1.2","tablet":"1.2","mobile":"1.2"}}}},"titleTypo":{"type":"object","default":{"fontFamily":"Roboto","fontSize":{"units":["px","em","rem"],"activeUnit":"px","values":{"desktop":20,"tablet":20,"mobile":20}},"fontWeight":500,"lineHeight":{"activeUnit":"px","units":["px"],"values":{"desktop":"28","tablet":"28","mobile":"28"}}}},"metaTypo":{"type":"object","default":{"fontFamily":"Roboto","fontSize":{"units":["px","em","rem"],"activeUnit":"px","values":{"desktop":12,"tablet":12,"mobile":12}},"fontWeight":400,"lineHeight":{"activeUnit":"","units":[""],"values":{"desktop":"1.2","tablet":"1.2","mobile":"1.2"}}}},"padding":{"type":"object","default":{"activeUnit":"px","isLinkActive":true,"properties":["top","right","bottom","left"],"responsiveViews":["desktop","tablet","mobile"],"units":["px","rem"],"values":{"desktop":[20,20,20,20],"tablet":[20,20,20,20],"mobile":[20,20,20,20]}}},"enableTitle":{"type":"boolean","default":true},"enableCategory":{"type":"boolean","default":true},"enableAuthor":{"type":"boolean","default":true},"enableDate":{"type":"boolean","default":true},"imageSize":{"type":"string","default":"full"},"color":{"type":"string","default":"#ffffff"},"bgColor":{"type":"string","default":"#0693e3"},"arrowBgColor":{"type":"string","default":"#000000"},"arrowColor":{"type":"string","default":"#ffffff"},"slidesToShow":{"type":"number","default":3}},"textdomain":"rise-blocks","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"rise-blocks/carousel-post","keywords":["carousel","slider"],"version":"3.1.1","title":"Carousel Post","category":"rise-blocks","description":"Carousel Post Block is for creating beautiful Gutenberg post grid blocks, post slider blocks and post carousel blocks quickly.","supports":{"html":false},"example":{"name":"rise-blocks/carousel-post","attributes":{"title":"Carousel Post","alignment":"center","postsToShow":5,"order":"desc","orderBy":"date","headingTypo":{"fontFamily":"Roboto","fontSize":{"units":["px","em","rem"],"activeUnit":"px","values":{"desktop":20,"tablet":20,"mobile":20}},"textTransform":"uppercase","fontWeight":700,"lineHeight":{"activeUnit":"","units":[""],"values":{"desktop":"1.2","tablet":"1.2","mobile":"1.2"}}},"titleTypo":{"fontFamily":"Roboto","fontSize":{"units":["px","em","rem"],"activeUnit":"px","values":{"desktop":20,"tablet":20,"mobile":20}},"fontWeight":500,"lineHeight":{"activeUnit":"px","units":["px"],"values":{"desktop":"28","tablet":"28","mobile":"28"}}},"metaTypo":{"fontFamily":"Roboto","fontSize":{"units":["px","em","rem"],"activeUnit":"px","values":{"desktop":12,"tablet":12,"mobile":12}},"fontWeight":400,"lineHeight":{"activeUnit":"","units":[""],"values":{"desktop":"1.2","tablet":"1.2","mobile":"1.2"}}},"padding":{"activeUnit":"px","isLinkActive":true,"properties":["top","right","bottom","left"],"responsiveViews":["desktop","tablet","mobile"],"units":["px","rem"],"values":{"desktop":[20,20,20,20],"tablet":[20,20,20,20],"mobile":[20,20,20,20]}},"enableTitle":true,"enableCategory":true,"enableAuthor":true,"enableDate":true,"imageSize":"full","color":"#ffffff","bgColor":"#0693e3","arrowBgColor":"#000000","arrowColor":"#ffffff","slidesToShow":2,"block_id":"rise-blocks-news-2-block-instance-1-b929ae92-5ae3-4c1f-8e04-9701285182f3"}},"attributes":{"block_id":{"type":"string"},"title":{"type":"string","default":"Carousel Post"},"alignment":{"type":"string","default":"center"},"postsToShow":{"type":"number","default":5},"order":{"type":"string","default":"desc"},"orderBy":{"type":"string","default":"date"},"categories":{"type":"string"},"headingTypo":{"type":"object","default":{"fontFamily":"Roboto","fontSize":{"units":["px","em","rem"],"activeUnit":"px","values":{"desktop":20,"tablet":20,"mobile":20}},"textTransform":"uppercase","fontWeight":700,"lineHeight":{"activeUnit":"","units":[""],"values":{"desktop":"1.2","tablet":"1.2","mobile":"1.2"}}}},"titleTypo":{"type":"object","default":{"fontFamily":"Roboto","fontSize":{"units":["px","em","rem"],"activeUnit":"px","values":{"desktop":20,"tablet":20,"mobile":20}},"fontWeight":500,"lineHeight":{"activeUnit":"px","units":["px"],"values":{"desktop":"28","tablet":"28","mobile":"28"}}}},"metaTypo":{"type":"object","default":{"fontFamily":"Roboto","fontSize":{"units":["px","em","rem"],"activeUnit":"px","values":{"desktop":12,"tablet":12,"mobile":12}},"fontWeight":400,"lineHeight":{"activeUnit":"","units":[""],"values":{"desktop":"1.2","tablet":"1.2","mobile":"1.2"}}}},"contentTypo":{"type":"object","default":{"fontFamily":"","fontSize":{"units":["px","em","rem"],"activeUnit":"px","values":{"desktop":14,"tablet":14,"mobile":14}},"fontWeight":400,"lineHeight":{"activeUnit":"","units":[""],"values":{"desktop":"1.2","tablet":"1.2","mobile":"1.2"}}}},"padding":{"type":"object","default":{"activeUnit":"px","isLinkActive":true,"properties":["top","right","bottom","left"],"responsiveViews":["desktop","tablet","mobile"],"units":["px","rem"],"values":{"desktop":[20,20,20,20],"tablet":[20,20,20,20],"mobile":[20,20,20,20]}}},"excerptLength":{"type":"number","default":20},"enableTitle":{"type":"boolean","default":true},"enableContent":{"type":"boolean","default":false},"enableCategory":{"type":"boolean","default":true},"enableAuthor":{"type":"boolean","default":true},"enableDate":{"type":"boolean","default":true},"imageSize":{"type":"string","default":"full"},"color":{"type":"string","default":"#ffffff"},"bgColor":{"type":"string","default":"#0693e3"},"arrowBgColor":{"type":"string","default":"#000000"},"arrowColor":{"type":"string","default":"#ffffff"},"slidesToShow":{"type":"number","default":3}},"textdomain":"rise-blocks","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
 
 /***/ })
 

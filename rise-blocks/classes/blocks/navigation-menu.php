@@ -163,7 +163,7 @@ if( !class_exists( 'Rise_Blocks_Navigation_Menu' ) ){
 							)
 						),
 						array(
-							'selector' => array( '.%prefix-main-nav li a:hover', '.%prefix-main-nav > li.current-menu-item > a' ),
+							'selector' => array( '.%prefix-main-nav li:hover', '.%prefix-main-nav > li.current-menu-item > a' ),
 							'props' => array(
 								'color' => 'activeColor',
 								'background-color' => 'activeBgColor'

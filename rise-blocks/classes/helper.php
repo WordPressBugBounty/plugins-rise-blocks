@@ -241,7 +241,7 @@ if( !class_exists( 'Rise_Blocks_Helper' ) ):
 		    if(! $uri){
 		    	$uri = self::get_plugin_directory_uri();
 		    }
-		    
+            
 		    foreach ( $scripts as $script ) {
 
 		        # Do not try to enqueue anything if handler is not supplied.
@@ -270,7 +270,7 @@ if( !class_exists( 'Rise_Blocks_Helper' ) ):
 	            	if( Rise_Blocks_Debug === false && $minified ){
 	            		$path = str_replace( '.css', '.min.css', $path );
 	            	}
-	           
+                    
 		            wp_enqueue_style( $script[ 'handler' ], $path, $dependency, $version );
 		        }
 

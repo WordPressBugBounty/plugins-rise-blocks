@@ -3,8 +3,8 @@ Contributors: risethemes, uzess, pradip56, bhuwanroka
 Tags: gutenberg, blocks, gutenberg blocks, editor, block, fse
 Requires at least: 4.7
 Requires PHP: 5.6
-Tested up to: 6.4.2
-Stable tag: 3.5
+Tested up to: 6.7
+Stable tag: 3.6
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -283,7 +283,14 @@ Definitely Not. As we have developed Rise Block focusing on lightweights, and cl
 
 == 3.4 ==
 * Added support for patterns
-* Make compatible for Pro plugin
+* Made compatible for Pro plugin
 
 == 3.5 ==
 * Made backward compatible for some blocks
+
+== 3.6 ==
+* General Fixing
+* Added content option on carousel post block
+* Icon list/Advance Button block aligment issue fixed
+* Blog/Counter block item per row issue fixed
+* Image Slider block image issue fixed

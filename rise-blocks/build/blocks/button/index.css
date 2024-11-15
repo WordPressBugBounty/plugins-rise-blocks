@@ -5,4 +5,8 @@
   max-width: 100%;
 }
 
+.aligncenter.wp-block-rise-blocks-buttons {
+  display: block !important;
+}
+
 /*# sourceMappingURL=index.css.map*/

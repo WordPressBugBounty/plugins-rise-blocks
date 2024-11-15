@@ -3177,13 +3177,13 @@ const svg = {
   }, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("g", null, (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
     d: "m93.71 50.29h27.79a1.75 1.75 0 0 0 1.75-1.75v-11.56a6.1 6.1 0 0 0 -5.2-6.017 12.024 12.024 0 0 0 .817-1.921 11.83 11.83 0 1 0 -21.785 1.793c.023.044.051.084.075.128a6.1 6.1 0 0 0 -5.2 6.017v2.584l-4.095 2.285v-23.349a13.765 13.765 0 0 0 -13.747-13.75h-55.615a13.765 13.765 0 0 0 -13.75 13.75v91a13.765 13.765 0 0 0 13.75 13.75h55.615a13.765 13.765 0 0 0 13.75-13.75v-23.35l7.967 4.45a11.749 11.749 0 0 0 1.254 4.354c.024.046.053.088.077.133a6.1 6.1 0 0 0 -5.2 6.017v11.55a1.75 1.75 0 0 0 1.75 1.75h5.487.039s.026 0 .039 0h16.654.039s.025 0 .038 0h5.491a1.75 1.75 0 0 0 1.75-1.75v-11.554a6.093 6.093 0 0 0 -5.2-6.017 12 12 0 0 0 .819-1.926 11.822 11.822 0 1 0 -22.743-6.4l-8.263-4.611v-36.288l4.095-2.285v4.967a1.75 1.75 0 0 0 1.752 1.75zm26.04 50.81v9.8h-2.027v-3.507a1.75 1.75 0 0 0 -3.5 0v3.507h-13.232v-3.507a1.75 1.75 0 0 0 -3.5 0v3.507h-2.031v-9.8a2.6 2.6 0 0 1 2.6-2.59h1.829a11.786 11.786 0 0 0 15.42 0h1.851a2.593 2.593 0 0 1 2.59 2.59zm-15.95-18.965a8.335 8.335 0 1 1 -1.975 13.395l-.023-.021a8.317 8.317 0 0 1 2-13.374zm-85.3-73.885h55.615a10.264 10.264 0 0 1 10.2 9.189h-76a10.264 10.264 0 0 1 10.185-9.189zm55.615 111.5h-55.615a10.261 10.261 0 0 1 -10.25-10.25v-6.917h76.115v6.917a10.261 10.261 0 0 1 -10.25 10.25zm10.25-20.667h-76.115v-78.144h76.115v22.861l-12.386 6.915q-.283-.546-.589-1.076a1.747 1.747 0 0 0 -.219-.38 29.033 29.033 0 0 0 -16.823-13.03 1.734 1.734 0 0 0 -.234-.067 28.775 28.775 0 0 0 -15.626 0 1.815 1.815 0 0 0 -.207.059 29.034 29.034 0 0 0 -16.838 13.04 1.753 1.753 0 0 0 -.217.376 28.814 28.814 0 0 0 0 28.726 1.753 1.753 0 0 0 .217.376 29.035 29.035 0 0 0 16.857 13.042 1.743 1.743 0 0 0 .217.062 28.774 28.774 0 0 0 15.569 0 1.662 1.662 0 0 0 .222-.064 29.031 29.031 0 0 0 16.86-13.04 1.747 1.747 0 0 0 .219-.38q.306-.531.589-1.076l12.389 6.917zm-36.307-9.733v-9.9h9.142a27.968 27.968 0 0 1 -4.466 9.141 25.292 25.292 0 0 1 -4.676.759zm-8.176-.758a27.948 27.948 0 0 1 -4.466-9.141h9.142v9.9a25.265 25.265 0 0 1 -4.676-.759zm4.676-49.942v9.9h-9.142a27.939 27.939 0 0 1 4.466-9.141 25.265 25.265 0 0 1 4.676-.759zm8.176.758a27.978 27.978 0 0 1 4.466 9.141h-9.142v-9.9a25.292 25.292 0 0 1 4.676.759zm-4.676 36.543v-10.201h11.251a55.473 55.473 0 0 1 -1.219 10.2zm-13.532 0a55.568 55.568 0 0 1 -1.22-10.2h11.252v10.2zm10.032-23.9v10.2h-11.252a55.492 55.492 0 0 1 1.22-10.2zm3.5 10.2v-10.2h10.032a55.441 55.441 0 0 1 1.219 10.2zm12.783-13.7a38.788 38.788 0 0 0 -2.667-7.016 25.585 25.585 0 0 1 8.295 7.016zm-29.067 0h-5.628a25.606 25.606 0 0 1 8.3-7.016 38.788 38.788 0 0 0 -2.672 7.014zm-7.89 3.5h7.062a58.551 58.551 0 0 0 -1.141 10.2h-8.847a25.238 25.238 0 0 1 2.926-10.202zm5.921 13.7a58.529 58.529 0 0 0 1.141 10.2h-7.062a25.238 25.238 0 0 1 -2.926-10.2zm1.969 13.7a38.788 38.788 0 0 0 2.666 7.016 25.6 25.6 0 0 1 -8.294-7.016zm29.067 0h5.628a25.585 25.585 0 0 1 -8.295 7.016 38.743 38.743 0 0 0 2.667-7.016zm7.89-3.5h-7.062a58.519 58.519 0 0 0 1.141-10.2h8.847a25.223 25.223 0 0 1 -2.926 10.2zm-5.921-13.701a58.605 58.605 0 0 0 -1.14-10.2h7.061a25.223 25.223 0 0 1 2.926 10.2zm21.555 17.939-10.955-6.113a28.888 28.888 0 0 0 0-20.151l10.955-6.114zm19.435-62.169a8.331 8.331 0 0 1 9.627 13.371l-.025.025a8.331 8.331 0 1 1 -9.6-13.4zm-8.34 18.96a2.6 2.6 0 0 1 2.6-2.59h1.824a11.786 11.786 0 0 0 15.431 0h1.845a2.593 2.593 0 0 1 2.59 2.59v9.81h-2.027v-3.513a1.75 1.75 0 0 0 -3.5 0v3.513h-13.232v-3.513a1.75 1.75 0 0 0 -3.5 0v3.513h-2.031z",
     "data-original": "#000000",
-    class: "active-path",
+    className: "active-path",
     "data-old_color": "#000000",
     fill: "#32373C"
   }), (0,react__WEBPACK_IMPORTED_MODULE_0__.createElement)("path", {
     d: "m46.308 104.413a6.75 6.75 0 1 0 6.75 6.75 6.757 6.757 0 0 0 -6.75-6.75zm0 10a3.25 3.25 0 1 1 3.25-3.25 3.254 3.254 0 0 1 -3.25 3.25z",
     "data-original": "#000000",
-    class: "active-path",
+    className: "active-path",
     "data-old_color": "#000000",
     fill: "#32373C"
   })), ' '),
@@ -13197,7 +13197,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _map_object__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./map-object */ "./node_modules/radium/es/map-object.js");
 
 
-
 function appendImportantToEachValue(style) {
   return (0,_map_object__WEBPACK_IMPORTED_MODULE_0__["default"])(style, function (result, key) {
     return (0,_append_px_if_needed__WEBPACK_IMPORTED_MODULE_1__["default"])(key, style[key]) + ' !important';
@@ -13217,8 +13216,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ appendPxIfNeeded)
 /* harmony export */ });
-
-
 // Copied from https://github.com/facebook/react/blob/
 // b87aabdfe1b7461e7331abb3601d9e6bb27544bc/
 // packages/react-dom/src/shared/CSSProperty.js
@@ -13257,7 +13254,6 @@ var isUnitlessNumber = {
   widows: true,
   zIndex: true,
   zoom: true,
-
   // SVG-related properties
   fillOpacity: true,
   floodOpacity: true,
@@ -13268,7 +13264,6 @@ var isUnitlessNumber = {
   strokeOpacity: true,
   strokeWidth: true
 };
-
 function appendPxIfNeeded(propertyName, value) {
   var needsPxSuffix = !isUnitlessNumber[propertyName] && typeof value === 'number' && value !== 0;
   return needsPxSuffix ? value + 'px' : value;
@@ -13302,11 +13297,10 @@ var camelCasePropsToDashCase = function camelCasePropsToDashCase(prefixedStyle) 
   // Since prefix is expected to work on inline style objects, we must
   // translate the keys to dash case for rendering to CSS.
   return Object.keys(prefixedStyle).reduce(function (result, key) {
-    var dashCaseKey = camelCaseToDashCase(key);
+    var dashCaseKey = camelCaseToDashCase(key); // Fix IE vendor prefix
 
-    // Fix IE vendor prefix
     if (/^ms-/.test(dashCaseKey)) {
-      dashCaseKey = '-' + dashCaseKey;
+      dashCaseKey = "-".concat(dashCaseKey);
     }
 
     result[dashCaseKey] = prefixedStyle[key];
@@ -13330,7 +13324,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* flow */
-
 var cleanStateKey = function cleanStateKey(key) {
   return key === null || typeof key === 'undefined' ? 'main' : key.toString();
 };
@@ -13352,20 +13345,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _enhancer__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../enhancer */ "./node_modules/radium/es/enhancer.js");
+/* harmony import */ var _enhancer__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../enhancer */ "./node_modules/radium/es/enhancer.js");
 /* harmony import */ var _style_keeper__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../style-keeper */ "./node_modules/radium/es/style-keeper.js");
-/* harmony import */ var _style_sheet__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./style-sheet */ "./node_modules/radium/es/components/style-sheet.js");
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+/* harmony import */ var _style_sheet__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./style-sheet */ "./node_modules/radium/es/components/style-sheet.js");
+/* harmony import */ var _context__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../context */ "./node_modules/radium/es/context.js");
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
 
-function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
-
-function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
 
 
 
@@ -13373,67 +13359,30 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
-
-
-
-function _getStyleKeeper(instance) {
-  if (!instance._radiumStyleKeeper) {
-    var userAgent = instance.props.radiumConfig && instance.props.radiumConfig.userAgent || instance.context._radiumConfig && instance.context._radiumConfig.userAgent;
-    instance._radiumStyleKeeper = new _style_keeper__WEBPACK_IMPORTED_MODULE_1__["default"](userAgent);
-  }
-
-  return instance._radiumStyleKeeper;
+function getStyleKeeper(configProp, configContext) {
+  var userAgent = configProp && configProp.userAgent || configContext && configContext.userAgent;
+  return new _style_keeper__WEBPACK_IMPORTED_MODULE_1__["default"](userAgent);
 }
 
-var StyleRoot = function (_PureComponent) {
-  _inherits(StyleRoot, _PureComponent);
+var StyleRootInner = (0,_enhancer__WEBPACK_IMPORTED_MODULE_2__["default"])(function (_ref) {
+  var children = _ref.children,
+      otherProps = _objectWithoutProperties(_ref, ["children"]);
 
-  function StyleRoot() {
-    _classCallCheck(this, StyleRoot);
+  return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("div", otherProps, children, react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_style_sheet__WEBPACK_IMPORTED_MODULE_3__["default"], null));
+});
 
-    var _this = _possibleConstructorReturn(this, (StyleRoot.__proto__ || Object.getPrototypeOf(StyleRoot)).apply(this, arguments));
+var StyleRoot = function StyleRoot(props) {
+  /* eslint-disable no-unused-vars */
+  // Pass down all props except config to the rendered div.
 
-    _getStyleKeeper(_this);
-    return _this;
-  }
-
-  _createClass(StyleRoot, [{
-    key: 'getChildContext',
-    value: function getChildContext() {
-      return { _radiumStyleKeeper: _getStyleKeeper(this) };
-    }
-  }, {
-    key: 'render',
-    value: function render() {
-      /* eslint-disable no-unused-vars */
-      // Pass down all props except config to the rendered div.
-      var _props = this.props,
-          radiumConfig = _props.radiumConfig,
-          otherProps = _objectWithoutProperties(_props, ['radiumConfig']);
-      /* eslint-enable no-unused-vars */
-
-      return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(
-        'div',
-        otherProps,
-        this.props.children,
-        react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_style_sheet__WEBPACK_IMPORTED_MODULE_2__["default"], null)
-      );
-    }
-  }]);
-
-  return StyleRoot;
-}(react__WEBPACK_IMPORTED_MODULE_0__.PureComponent);
-
-StyleRoot.contextTypes = {
-  _radiumConfig: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().object),
-  _radiumStyleKeeper: prop_types__WEBPACK_IMPORTED_MODULE_3___default().instanceOf(_style_keeper__WEBPACK_IMPORTED_MODULE_1__["default"])
+  /* eslint-enable no-unused-vars */
+  var radiumConfig = props.radiumConfig;
+  var configContext = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(_context__WEBPACK_IMPORTED_MODULE_4__.RadiumConfigContext);
+  var styleKeeper = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)(getStyleKeeper(radiumConfig, configContext));
+  return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_context__WEBPACK_IMPORTED_MODULE_4__.StyleKeeperContext.Provider, {
+    value: styleKeeper.current
+  }, react__WEBPACK_IMPORTED_MODULE_0___default().createElement(StyleRootInner, props));
 };
-
-StyleRoot.childContextTypes = {
-  _radiumStyleKeeper: prop_types__WEBPACK_IMPORTED_MODULE_3___default().instanceOf(_style_keeper__WEBPACK_IMPORTED_MODULE_1__["default"])
-};
-
-StyleRoot = (0,_enhancer__WEBPACK_IMPORTED_MODULE_4__["default"])(StyleRoot);
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (StyleRoot);
 
@@ -13448,38 +13397,52 @@ StyleRoot = (0,_enhancer__WEBPACK_IMPORTED_MODULE_4__["default"])(StyleRoot);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (/* binding */ StyleSheet)
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_1__);
-/* harmony import */ var _style_keeper__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../style-keeper */ "./node_modules/radium/es/style-keeper.js");
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _class, _temp;
+/* harmony import */ var _context__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../context */ "./node_modules/radium/es/context.js");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 
 
 
 
-
-var StyleSheet = (_temp = _class = function (_Component) {
+var StyleSheet =
+/*#__PURE__*/
+function (_Component) {
   _inherits(StyleSheet, _Component);
 
+  // eslint-disable-next-line react/sort-comp
   function StyleSheet() {
+    var _this;
+
     _classCallCheck(this, StyleSheet);
 
-    var _this = _possibleConstructorReturn(this, (StyleSheet.__proto__ || Object.getPrototypeOf(StyleSheet)).apply(this, arguments));
+    _this = _possibleConstructorReturn(this, _getPrototypeOf(StyleSheet).apply(this, arguments));
+    _this.styleKeeper = void 0;
+    _this._subscription = void 0;
+    _this._root = void 0;
+    _this._css = void 0;
 
     _this._onChange = function () {
-      var nextCSS = _this.context._radiumStyleKeeper.getCSS();
+      var nextCSS = _this.styleKeeper.getCSS();
 
       if (nextCSS !== _this._css) {
         if (_this._root) {
@@ -13487,39 +13450,48 @@ var StyleSheet = (_temp = _class = function (_Component) {
         } else {
           throw new Error('No root style object found, even after StyleSheet mount.');
         }
+
         _this._css = nextCSS;
       }
     };
 
-    _this._css = _this.context._radiumStyleKeeper.getCSS();
+    if (!_this.props.styleKeeperContext) {
+      throw new Error('StyleRoot is required to use StyleSheet');
+    }
+
+    _this.styleKeeper = _this.props.styleKeeperContext;
+    _this._css = _this.styleKeeper.getCSS();
     return _this;
   }
 
   _createClass(StyleSheet, [{
-    key: 'componentDidMount',
+    key: "componentDidMount",
     value: function componentDidMount() {
-      this._subscription = this.context._radiumStyleKeeper.subscribe(this._onChange);
+      this._subscription = this.styleKeeper.subscribe(this._onChange);
+
       this._onChange();
     }
   }, {
-    key: 'shouldComponentUpdate',
+    key: "shouldComponentUpdate",
     value: function shouldComponentUpdate() {
       return false;
     }
   }, {
-    key: 'componentWillUnmount',
+    key: "componentWillUnmount",
     value: function componentWillUnmount() {
       if (this._subscription) {
         this._subscription.remove();
       }
     }
   }, {
-    key: 'render',
+    key: "render",
     value: function render() {
       var _this2 = this;
 
-      return react__WEBPACK_IMPORTED_MODULE_0___default().createElement('style', {
-        dangerouslySetInnerHTML: { __html: this._css },
+      return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("style", {
+        dangerouslySetInnerHTML: {
+          __html: this._css
+        },
         ref: function ref(c) {
           _this2._root = c;
         }
@@ -13528,10 +13500,9 @@ var StyleSheet = (_temp = _class = function (_Component) {
   }]);
 
   return StyleSheet;
-}(react__WEBPACK_IMPORTED_MODULE_0__.Component), _class.contextTypes = {
-  _radiumStyleKeeper: prop_types__WEBPACK_IMPORTED_MODULE_1___default().instanceOf(_style_keeper__WEBPACK_IMPORTED_MODULE_2__["default"])
-}, _temp);
+}(react__WEBPACK_IMPORTED_MODULE_0__.Component);
 
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_context__WEBPACK_IMPORTED_MODULE_1__.withRadiumContexts)(StyleSheet));
 
 /***/ }),
 
@@ -13551,41 +13522,48 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
 /* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_2__);
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _class, _temp;
+/* harmony import */ var _context__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../context */ "./node_modules/radium/es/context.js");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
 
 
 
 
 
 
-var Style = (_temp = _class = function (_PureComponent) {
+var Style =
+/*#__PURE__*/
+function (_PureComponent) {
   _inherits(Style, _PureComponent);
 
   function Style() {
     _classCallCheck(this, Style);
 
-    return _possibleConstructorReturn(this, (Style.__proto__ || Object.getPrototypeOf(Style)).apply(this, arguments));
+    return _possibleConstructorReturn(this, _getPrototypeOf(Style).apply(this, arguments));
   }
 
   _createClass(Style, [{
-    key: '_buildStyles',
+    key: "_buildStyles",
     value: function _buildStyles(styles) {
-      var _this2 = this;
+      var _this = this;
 
-      var userAgent = this.props.radiumConfig && this.props.radiumConfig.userAgent || this.context && this.context._radiumConfig && this.context._radiumConfig.userAgent;
-
+      var userAgent = this.props.radiumConfig && this.props.radiumConfig.userAgent || this.props.radiumConfigContext && this.props.radiumConfigContext.userAgent;
       var scopeSelector = this.props.scopeSelector;
-
       var rootRules = Object.keys(styles).reduce(function (accumulator, selector) {
         if (_typeof(styles[selector]) !== 'object') {
           accumulator[selector] = styles[selector];
@@ -13594,17 +13572,15 @@ var Style = (_temp = _class = function (_PureComponent) {
         return accumulator;
       }, {});
       var rootStyles = Object.keys(rootRules).length ? (0,_css_rule_set_to_string__WEBPACK_IMPORTED_MODULE_1__["default"])(scopeSelector || '', rootRules, userAgent) : '';
-
       return rootStyles + Object.keys(styles).reduce(function (accumulator, selector) {
         var rules = styles[selector];
 
         if (selector === 'mediaQueries') {
-          accumulator += _this2._buildMediaQueryString(rules);
+          accumulator += _this._buildMediaQueryString(rules);
         } else if (_typeof(styles[selector]) === 'object') {
           var completeSelector = scopeSelector ? selector.split(',').map(function (part) {
             return scopeSelector + ' ' + part.trim();
           }).join(',') : selector;
-
           accumulator += (0,_css_rule_set_to_string__WEBPACK_IMPORTED_MODULE_1__["default"])(completeSelector, rules, userAgent);
         }
 
@@ -13612,20 +13588,18 @@ var Style = (_temp = _class = function (_PureComponent) {
       }, '');
     }
   }, {
-    key: '_buildMediaQueryString',
+    key: "_buildMediaQueryString",
     value: function _buildMediaQueryString(stylesByMediaQuery) {
-      var _this3 = this;
+      var _this2 = this;
 
       var mediaQueryString = '';
-
       Object.keys(stylesByMediaQuery).forEach(function (query) {
-        mediaQueryString += '@media ' + query + '{' + _this3._buildStyles(stylesByMediaQuery[query]) + '}';
+        mediaQueryString += '@media ' + query + '{' + _this2._buildStyles(stylesByMediaQuery[query]) + '}';
       });
-
       return mediaQueryString;
     }
   }, {
-    key: 'render',
+    key: "render",
     value: function render() {
       if (!this.props.rules) {
         return null;
@@ -13633,23 +13607,67 @@ var Style = (_temp = _class = function (_PureComponent) {
 
       var styles = this._buildStyles(this.props.rules);
 
-      return react__WEBPACK_IMPORTED_MODULE_0___default().createElement('style', { dangerouslySetInnerHTML: { __html: styles } });
+      return react__WEBPACK_IMPORTED_MODULE_0___default().createElement("style", {
+        dangerouslySetInnerHTML: {
+          __html: styles
+        }
+      });
     }
   }]);
 
   return Style;
-}(react__WEBPACK_IMPORTED_MODULE_0__.PureComponent), _class.propTypes = {
+}(react__WEBPACK_IMPORTED_MODULE_0__.PureComponent);
+
+Style.propTypes = {
   radiumConfig: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().object),
   rules: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().object),
   scopeSelector: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().string)
-}, _class.contextTypes = {
-  _radiumConfig: (prop_types__WEBPACK_IMPORTED_MODULE_2___default().object)
-}, _class.defaultProps = {
+};
+Style.defaultProps = {
   scopeSelector: ''
-}, _temp);
+};
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ((0,_context__WEBPACK_IMPORTED_MODULE_3__.withRadiumContexts)(Style));
+
+/***/ }),
+
+/***/ "./node_modules/radium/es/context.js":
+/*!*******************************************!*\
+  !*** ./node_modules/radium/es/context.js ***!
+  \*******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   RadiumConfigContext: () => (/* binding */ RadiumConfigContext),
+/* harmony export */   StyleKeeperContext: () => (/* binding */ StyleKeeperContext),
+/* harmony export */   withRadiumContexts: () => (/* binding */ withRadiumContexts)
+/* harmony export */ });
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! hoist-non-react-statics */ "./node_modules/radium/node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js");
+/* harmony import */ var hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_1__);
+function _extends() { _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
 
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Style);
+
+
+var StyleKeeperContext = react__WEBPACK_IMPORTED_MODULE_0___default().createContext(undefined);
+var RadiumConfigContext = react__WEBPACK_IMPORTED_MODULE_0___default().createContext(undefined);
+function withRadiumContexts(WrappedComponent) {
+  var WithRadiumContexts = react__WEBPACK_IMPORTED_MODULE_0___default().forwardRef(function (props, ref) {
+    var radiumConfigContext = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(RadiumConfigContext);
+    var styleKeeperContext = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(StyleKeeperContext);
+    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(WrappedComponent, _extends({
+      ref: ref
+    }, props, {
+      radiumConfigContext: radiumConfigContext,
+      styleKeeperContext: styleKeeperContext
+    }));
+  });
+  WithRadiumContexts.displayName = "withRadiumContexts(".concat(WrappedComponent.displayName || WrappedComponent.name || 'Component', ")");
+  return hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_1___default()(WithRadiumContexts, WrappedComponent);
+}
 
 /***/ }),
 
@@ -13708,24 +13726,54 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
-/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _style_keeper__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./style-keeper */ "./node_modules/radium/es/style-keeper.js");
-/* harmony import */ var _resolve_styles__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./resolve-styles */ "./node_modules/radium/es/resolve-styles.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! prop-types */ "./node_modules/prop-types/index.js");
+/* harmony import */ var prop_types__WEBPACK_IMPORTED_MODULE_5___default = /*#__PURE__*/__webpack_require__.n(prop_types__WEBPACK_IMPORTED_MODULE_5__);
+/* harmony import */ var hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! hoist-non-react-statics */ "./node_modules/radium/node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js");
+/* harmony import */ var hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _resolve_styles__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./resolve-styles */ "./node_modules/radium/es/resolve-styles.js");
 /* harmony import */ var _get_radium_style_state__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./get-radium-style-state */ "./node_modules/radium/es/get-radium-style-state.js");
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
-var _get = function get(object, property, receiver) { if (object === null) object = Function.prototype; var desc = Object.getOwnPropertyDescriptor(object, property); if (desc === undefined) { var parent = Object.getPrototypeOf(object); if (parent === null) { return undefined; } else { return get(parent, property, receiver); } } else if ("value" in desc) { return desc.value; } else { var getter = desc.get; if (getter === undefined) { return undefined; } return getter.call(receiver); } };
-
-function _objectWithoutProperties(obj, keys) { var target = {}; for (var i in obj) { if (keys.indexOf(i) >= 0) continue; if (!Object.prototype.hasOwnProperty.call(obj, i)) continue; target[i] = obj[i]; } return target; }
+/* harmony import */ var _context__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./context */ "./node_modules/radium/es/context.js");
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
 
-function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _get(target, property, receiver) { if (typeof Reflect !== "undefined" && Reflect.get) { _get = Reflect.get; } else { _get = function _get(target, property, receiver) { var base = _superPropBase(target, property); if (!base) return; var desc = Object.getOwnPropertyDescriptor(base, property); if (desc.get) { return desc.get.call(receiver); } return desc.value; }; } return _get(target, property, receiver || target); }
+
+function _superPropBase(object, property) { while (!Object.prototype.hasOwnProperty.call(object, property)) { object = _getPrototypeOf(object); if (object === null) break; } return object; }
+
+function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
+
+function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
+
+function _slicedToArray(arr, i) { return _arrayWithHoles(arr) || _iterableToArrayLimit(arr, i) || _nonIterableRest(); }
+
+function _nonIterableRest() { throw new TypeError("Invalid attempt to destructure non-iterable instance"); }
+
+function _iterableToArrayLimit(arr, i) { var _arr = []; var _n = true; var _d = false; var _e = undefined; try { for (var _i = arr[Symbol.iterator](), _s; !(_n = (_s = _i.next()).done); _n = true) { _arr.push(_s.value); if (i && _arr.length === i) break; } } catch (err) { _d = true; _e = err; } finally { try { if (!_n && _i["return"] != null) _i["return"](); } finally { if (_d) throw _e; } } return _arr; }
+
+function _arrayWithHoles(arr) { if (Array.isArray(arr)) return arr; }
+
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
+
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _objectWithoutProperties(source, excluded) { if (source == null) return {}; var target = _objectWithoutPropertiesLoose(source, excluded); var key, i; if (Object.getOwnPropertySymbols) { var sourceSymbolKeys = Object.getOwnPropertySymbols(source); for (i = 0; i < sourceSymbolKeys.length; i++) { key = sourceSymbolKeys[i]; if (excluded.indexOf(key) >= 0) continue; if (!Object.prototype.propertyIsEnumerable.call(source, key)) continue; target[key] = source[key]; } } return target; }
+
+function _objectWithoutPropertiesLoose(source, excluded) { if (source == null) return {}; var target = {}; var sourceKeys = Object.keys(source); var key, i; for (i = 0; i < sourceKeys.length; i++) { key = sourceKeys[i]; if (excluded.indexOf(key) >= 0) continue; target[key] = source[key]; } return target; }
+
+function _toPropertyKey(arg) { var key = _toPrimitive(arg, "string"); return _typeof(key) === "symbol" ? key : String(key); }
+
+function _toPrimitive(input, hint) { if (_typeof(input) !== "object" || input === null) return input; var prim = input[Symbol.toPrimitive]; if (prim !== undefined) { var res = prim.call(input, hint || "default"); if (_typeof(res) !== "object") return res; throw new TypeError("@@toPrimitive must return a primitive value."); } return (hint === "string" ? String : Number)(input); }
 
 
 
@@ -13735,182 +13783,242 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 var KEYS_TO_IGNORE_WHEN_COPYING_PROPERTIES = ['arguments', 'callee', 'caller', 'length', 'name', 'prototype', 'type'];
-
-var RADIUM_PROTO = void 0;
-var RADIUM_METHODS = void 0;
+var RADIUM_PROTO;
+var RADIUM_METHODS;
 
 function copyProperties(source, target) {
   Object.getOwnPropertyNames(source).forEach(function (key) {
     if (KEYS_TO_IGNORE_WHEN_COPYING_PROPERTIES.indexOf(key) < 0 && !target.hasOwnProperty(key)) {
       var descriptor = Object.getOwnPropertyDescriptor(source, key);
-      Object.defineProperty(target, key, descriptor);
+      descriptor && Object.defineProperty(target, key, descriptor);
     }
   });
-}
-
-// Handle scenarios of:
+} // Handle scenarios of:
 // - Inherit from `React.Component` in any fashion
 //   See: https://github.com/FormidableLabs/radium/issues/738
 // - There's an explicit `render` field defined
+
+
 function isStateless(component) {
   var proto = component.prototype || {};
-
   return !component.isReactComponent && !proto.isReactComponent && !component.render && !proto.render;
-}
-
-// Check if value is a real ES class in Native / Node code.
+} // Check if value is a real ES class in Native / Node code.
 // See: https://stackoverflow.com/a/30760236
+
+
 function isNativeClass(component) {
   return typeof component === 'function' && /^\s*class\s+/.test(component.toString());
-}
-
-// Handle es7 arrow functions on React class method names by detecting
+} // Handle es7 arrow functions on React class method names by detecting
 // and transfering the instance method to original class prototype.
 // (Using a copy of the class).
 // See: https://github.com/FormidableLabs/radium/issues/738
+
+
 function copyArrowFuncs(enhancedSelf, ComposedComponent) {
   RADIUM_METHODS.forEach(function (name) {
     var thisDesc = Object.getOwnPropertyDescriptor(enhancedSelf, name);
-    var thisMethod = (thisDesc || {}).value;
-    // Only care if have instance method.
+    var thisMethod = (thisDesc || {}).value; // Only care if have instance method.
+
     if (!thisMethod) {
       return;
     }
+
     var radiumDesc = Object.getOwnPropertyDescriptor(RADIUM_PROTO, name);
     var radiumProtoMethod = (radiumDesc || {}).value;
-    var superProtoMethod = ComposedComponent.prototype[name];
-    // Allow transfer when:
+    var superProtoMethod = ComposedComponent.prototype[name]; // Allow transfer when:
     // 1. have an instance method
     // 2. the super class prototype doesn't have any method
     // 3. it is not already the radium prototype's
+
     if (!superProtoMethod && thisMethod !== radiumProtoMethod) {
       // Transfer dynamic render component to Component prototype (copy).
-      Object.defineProperty(ComposedComponent.prototype, name, thisDesc);
-      // Remove instance property, leaving us to have a contrived
+      thisDesc && Object.defineProperty(ComposedComponent.prototype, name, thisDesc); // Remove instance property, leaving us to have a contrived
       // inheritance chain of (1) radium, (2) superclass.
+
       delete enhancedSelf[name];
     }
   });
 }
 
-function createEnhancedComponent(origComponent, ComposedComponent, config) {
-  var _class, _temp;
+function trimRadiumState(enhancer) {
+  if (enhancer._extraRadiumStateKeys && enhancer._extraRadiumStateKeys.length > 0) {
+    var trimmedRadiumState = enhancer._extraRadiumStateKeys.reduce(function (state, key) {
+      // eslint-disable-next-line no-unused-vars
+      var extraStateKey = state[key],
+          remainingState = _objectWithoutProperties(state, [key].map(_toPropertyKey));
 
-  var RadiumEnhancer = (_temp = _class = function (_ComposedComponent) {
+      return remainingState;
+    }, (0,_get_radium_style_state__WEBPACK_IMPORTED_MODULE_2__["default"])(enhancer));
+
+    enhancer._lastRadiumState = trimmedRadiumState;
+    enhancer.setState({
+      _radiumStyleState: trimmedRadiumState
+    });
+  }
+}
+
+function cleanUpEnhancer(enhancer) {
+  var _radiumMouseUpListener = enhancer._radiumMouseUpListener,
+      _radiumMediaQueryListenersByQuery = enhancer._radiumMediaQueryListenersByQuery;
+  enhancer._radiumIsMounted = false;
+
+  if (_radiumMouseUpListener) {
+    _radiumMouseUpListener.remove();
+  }
+
+  if (_radiumMediaQueryListenersByQuery) {
+    Object.keys(_radiumMediaQueryListenersByQuery).forEach(function (query) {
+      _radiumMediaQueryListenersByQuery[query].remove();
+    }, enhancer);
+  }
+}
+
+function resolveConfig(propConfig, contextConfig, hocConfig) {
+  var config = propConfig || contextConfig || hocConfig;
+
+  if (hocConfig && config !== hocConfig) {
+    config = _objectSpread({}, hocConfig, config);
+  }
+
+  return config;
+}
+
+function renderRadiumComponent(enhancer, renderedElement, resolvedConfig, propConfig) {
+  var _resolveStyles = (0,_resolve_styles__WEBPACK_IMPORTED_MODULE_3__["default"])(enhancer, renderedElement, resolvedConfig),
+      extraStateKeyMap = _resolveStyles.extraStateKeyMap,
+      element = _resolveStyles.element;
+
+  enhancer._extraRadiumStateKeys = Object.keys(extraStateKeyMap);
+
+  if (propConfig) {
+    return react__WEBPACK_IMPORTED_MODULE_0___default().createElement(_context__WEBPACK_IMPORTED_MODULE_4__.RadiumConfigContext.Provider, {
+      value: propConfig
+    }, element);
+  }
+
+  return element;
+}
+
+function createEnhancedFunctionComponent(origComponent, config) {
+  var RadiumEnhancer = react__WEBPACK_IMPORTED_MODULE_0___default().forwardRef(function (props, ref) {
+    var radiumConfig = props.radiumConfig,
+        otherProps = _objectWithoutProperties(props, ["radiumConfig"]);
+
+    var radiumConfigContext = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(_context__WEBPACK_IMPORTED_MODULE_4__.RadiumConfigContext);
+    var styleKeeperContext = (0,react__WEBPACK_IMPORTED_MODULE_0__.useContext)(_context__WEBPACK_IMPORTED_MODULE_4__.StyleKeeperContext);
+
+    var _useState = (0,react__WEBPACK_IMPORTED_MODULE_0__.useState)({
+      _radiumStyleState: {}
+    }),
+        _useState2 = _slicedToArray(_useState, 2),
+        state = _useState2[0],
+        setState = _useState2[1];
+
+    var enhancerApi = (0,react__WEBPACK_IMPORTED_MODULE_0__.useRef)({
+      state: state,
+      setState: setState,
+      _radiumMediaQueryListenersByQuery: undefined,
+      _radiumMouseUpListener: undefined,
+      _radiumIsMounted: true,
+      _lastRadiumState: undefined,
+      _extraRadiumStateKeys: undefined,
+      _radiumStyleKeeper: styleKeeperContext
+    }).current; // result of useRef is never recreated and is designed to be mutable
+    // we need to make sure the latest state is attached to it
+
+    enhancerApi.state = state;
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+      return function () {
+        cleanUpEnhancer(enhancerApi);
+      };
+    }, [enhancerApi]);
+    var hasExtraStateKeys = enhancerApi._extraRadiumStateKeys && enhancerApi._extraRadiumStateKeys.length > 0;
+    (0,react__WEBPACK_IMPORTED_MODULE_0__.useEffect)(function () {
+      trimRadiumState(enhancerApi);
+    }, [hasExtraStateKeys, enhancerApi]);
+    var renderedElement = origComponent(otherProps, ref);
+    var currentConfig = resolveConfig(radiumConfig, radiumConfigContext, config);
+    return renderRadiumComponent(enhancerApi, renderedElement, currentConfig, radiumConfig);
+  });
+  RadiumEnhancer._isRadiumEnhanced = true;
+  RadiumEnhancer.defaultProps = origComponent.defaultProps;
+  return hoist_non_react_statics__WEBPACK_IMPORTED_MODULE_1___default()(RadiumEnhancer, origComponent);
+}
+
+function createEnhancedClassComponent(origComponent, ComposedComponent, config) {
+  var RadiumEnhancer =
+  /*#__PURE__*/
+  function (_ComposedComponent) {
     _inherits(RadiumEnhancer, _ComposedComponent);
 
+    // need to attempt to assign to this.state in case
+    // super component is setting state on construction,
+    // otherwise class properties reinitialize to undefined
+    // need to assign the following methods to this.xxx as
+    // tests attempt to set this on the original component
     function RadiumEnhancer() {
+      var _this;
+
       _classCallCheck(this, RadiumEnhancer);
 
-      var _this = _possibleConstructorReturn(this, (RadiumEnhancer.__proto__ || Object.getPrototypeOf(RadiumEnhancer)).apply(this, arguments));
-
+      _this = _possibleConstructorReturn(this, _getPrototypeOf(RadiumEnhancer).apply(this, arguments));
       _this.state = _this.state || {};
-      _this.state._radiumStyleState = {};
+      _this._radiumStyleKeeper = _this.props.styleKeeperContext;
+      _this._radiumMediaQueryListenersByQuery = _this._radiumMediaQueryListenersByQuery;
+      _this._radiumMouseUpListener = _this._radiumMouseUpListener;
       _this._radiumIsMounted = true;
+      _this._lastRadiumState = void 0;
+      _this._extraRadiumStateKeys = void 0;
+      _this.state._radiumStyleState = {};
 
-      var self = _this;
+      var self = _assertThisInitialized(_this); // Handle es7 arrow functions on React class method
 
-      // Handle es7 arrow functions on React class method
+
       copyArrowFuncs(self, ComposedComponent);
       return _this;
     }
 
     _createClass(RadiumEnhancer, [{
-      key: 'componentWillUnmount',
-      value: function componentWillUnmount() {
-        if (_get(RadiumEnhancer.prototype.__proto__ || Object.getPrototypeOf(RadiumEnhancer.prototype), 'componentWillUnmount', this)) {
-          _get(RadiumEnhancer.prototype.__proto__ || Object.getPrototypeOf(RadiumEnhancer.prototype), 'componentWillUnmount', this).call(this);
-        }
-
-        this._radiumIsMounted = false;
-
-        if (this._radiumMouseUpListener) {
-          this._radiumMouseUpListener.remove();
-        }
-
-        if (this._radiumMediaQueryListenersByQuery) {
-          Object.keys(this._radiumMediaQueryListenersByQuery).forEach(function (query) {
-            this._radiumMediaQueryListenersByQuery[query].remove();
-          }, this);
-        }
-      }
-    }, {
-      key: 'getChildContext',
-      value: function getChildContext() {
-        var superChildContext = _get(RadiumEnhancer.prototype.__proto__ || Object.getPrototypeOf(RadiumEnhancer.prototype), 'getChildContext', this) ? _get(RadiumEnhancer.prototype.__proto__ || Object.getPrototypeOf(RadiumEnhancer.prototype), 'getChildContext', this).call(this) : {};
-
-        if (!this.props.radiumConfig) {
-          return superChildContext;
-        }
-
-        var newContext = _extends({}, superChildContext);
-
-        if (this.props.radiumConfig) {
-          newContext._radiumConfig = this.props.radiumConfig;
-        }
-
-        return newContext;
-      }
-    }, {
-      key: 'render',
-      value: function render() {
-        var renderedElement = _get(RadiumEnhancer.prototype.__proto__ || Object.getPrototypeOf(RadiumEnhancer.prototype), 'render', this).call(this);
-        var currentConfig = this.props.radiumConfig || this.context._radiumConfig || config;
-
-        if (config && currentConfig !== config) {
-          currentConfig = _extends({}, config, currentConfig);
-        }
-
-        // do the style and interaction work
-
-        var _resolveStyles = (0,_resolve_styles__WEBPACK_IMPORTED_MODULE_1__["default"])(this, renderedElement, currentConfig),
-            extraStateKeyMap = _resolveStyles.extraStateKeyMap,
-            element = _resolveStyles.element;
-
-        this._extraRadiumStateKeys = Object.keys(extraStateKeyMap);
-
-        return element;
-      }
-
-      /* eslint-disable react/no-did-update-set-state, no-unused-vars */
-
-    }, {
-      key: 'componentDidUpdate',
+      key: "componentDidUpdate",
       value: function componentDidUpdate(prevProps, prevState, snapshot) {
-        if (_get(RadiumEnhancer.prototype.__proto__ || Object.getPrototypeOf(RadiumEnhancer.prototype), 'componentDidUpdate', this)) {
-          _get(RadiumEnhancer.prototype.__proto__ || Object.getPrototypeOf(RadiumEnhancer.prototype), 'componentDidUpdate', this).call(this, prevProps, prevState, snapshot);
+        if (_get(_getPrototypeOf(RadiumEnhancer.prototype), "componentDidUpdate", this)) {
+          _get(_getPrototypeOf(RadiumEnhancer.prototype), "componentDidUpdate", this).call(this, prevProps, prevState, snapshot);
         }
 
-        if (this._extraRadiumStateKeys && this._extraRadiumStateKeys.length > 0) {
-          var trimmedRadiumState = this._extraRadiumStateKeys.reduce(function (state, key) {
-            var extraStateKey = state[key],
-                remainingState = _objectWithoutProperties(state, [key]);
-
-            return remainingState;
-          }, (0,_get_radium_style_state__WEBPACK_IMPORTED_MODULE_2__["default"])(this));
-
-          this._lastRadiumState = trimmedRadiumState;
-          this.setState({ _radiumStyleState: trimmedRadiumState });
-        }
+        trimRadiumState(this);
       }
-      /* eslint-enable react/no-did-update-set-state, no-unused-vars */
+    }, {
+      key: "componentWillUnmount",
+      value: function componentWillUnmount() {
+        if (_get(_getPrototypeOf(RadiumEnhancer.prototype), "componentWillUnmount", this)) {
+          _get(_getPrototypeOf(RadiumEnhancer.prototype), "componentWillUnmount", this).call(this);
+        }
 
+        cleanUpEnhancer(this);
+      }
+    }, {
+      key: "render",
+      value: function render() {
+        var renderedElement = _get(_getPrototypeOf(RadiumEnhancer.prototype), "render", this).call(this);
+
+        var currentConfig = resolveConfig(this.props.radiumConfig, this.props.radiumConfigContext, config);
+        return renderRadiumComponent(this, renderedElement, currentConfig, this.props.radiumConfig);
+      }
     }]);
 
     return RadiumEnhancer;
-  }(ComposedComponent), _class._isRadiumEnhanced = true, _temp);
+  }(ComposedComponent); // Lazy infer the method names of the Enhancer.
 
-  // Lazy infer the method names of the Enhancer.
 
+  RadiumEnhancer._isRadiumEnhanced = true;
   RADIUM_PROTO = RadiumEnhancer.prototype;
   RADIUM_METHODS = Object.getOwnPropertyNames(RADIUM_PROTO).filter(function (n) {
     return n !== 'constructor' && typeof RADIUM_PROTO[n] === 'function';
-  });
-
-  // Class inheritance uses Object.create and because of __proto__ issues
+  }); // Class inheritance uses Object.create and because of __proto__ issues
   // with IE <10 any static properties of the superclass aren't inherited and
   // so need to be manually populated.
   // See http://babeljs.io/docs/advanced/caveats/#classes-10-and-below-
+
   copyProperties(origComponent, RadiumEnhancer);
 
   if (true) {
@@ -13918,53 +14026,18 @@ function createEnhancedComponent(origComponent, ComposedComponent, config) {
     // level prototype methods on the Radium enhanced prototype as discussed in
     // https://github.com/FormidableLabs/radium/issues/219.
     copyProperties(ComposedComponent.prototype, RadiumEnhancer.prototype);
-  }
+  } // add Radium propTypes to enhanced component's propTypes
 
-  // add Radium propTypes to enhanced component's propTypes
+
   if (RadiumEnhancer.propTypes && RadiumEnhancer.propTypes.style) {
-    RadiumEnhancer.propTypes = _extends({}, RadiumEnhancer.propTypes, {
-      style: prop_types__WEBPACK_IMPORTED_MODULE_3___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_3___default().array), (prop_types__WEBPACK_IMPORTED_MODULE_3___default().object)])
+    RadiumEnhancer.propTypes = _objectSpread({}, RadiumEnhancer.propTypes, {
+      style: prop_types__WEBPACK_IMPORTED_MODULE_5___default().oneOfType([(prop_types__WEBPACK_IMPORTED_MODULE_5___default().array), (prop_types__WEBPACK_IMPORTED_MODULE_5___default().object)])
     });
-  }
+  } // copy display name to enhanced component
 
-  // copy display name to enhanced component
+
   RadiumEnhancer.displayName = origComponent.displayName || origComponent.name || 'Component';
-
-  // handle context
-  RadiumEnhancer.contextTypes = _extends({}, RadiumEnhancer.contextTypes, {
-    _radiumConfig: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().object),
-    _radiumStyleKeeper: prop_types__WEBPACK_IMPORTED_MODULE_3___default().instanceOf(_style_keeper__WEBPACK_IMPORTED_MODULE_4__["default"])
-  });
-
-  RadiumEnhancer.childContextTypes = _extends({}, RadiumEnhancer.childContextTypes, {
-    _radiumConfig: (prop_types__WEBPACK_IMPORTED_MODULE_3___default().object),
-    _radiumStyleKeeper: prop_types__WEBPACK_IMPORTED_MODULE_3___default().instanceOf(_style_keeper__WEBPACK_IMPORTED_MODULE_4__["default"])
-  });
-
-  return RadiumEnhancer;
-}
-
-function createComposedFromStatelessFunc(ComposedComponent, component) {
-  ComposedComponent = function (_Component) {
-    _inherits(ComposedComponent, _Component);
-
-    function ComposedComponent() {
-      _classCallCheck(this, ComposedComponent);
-
-      return _possibleConstructorReturn(this, (ComposedComponent.__proto__ || Object.getPrototypeOf(ComposedComponent)).apply(this, arguments));
-    }
-
-    _createClass(ComposedComponent, [{
-      key: 'render',
-      value: function render() {
-        return component(this.props, this.context);
-      }
-    }]);
-
-    return ComposedComponent;
-  }(react__WEBPACK_IMPORTED_MODULE_0__.Component);
-  ComposedComponent.displayName = component.displayName || component.name;
-  return ComposedComponent;
+  return (0,_context__WEBPACK_IMPORTED_MODULE_4__.withRadiumContexts)(RadiumEnhancer);
 }
 
 function createComposedFromNativeClass(ComposedComponent) {
@@ -13973,58 +14046,69 @@ function createComposedFromNativeClass(ComposedComponent) {
       // Use Reflect.construct to simulate 'new'
       var obj = Reflect.construct(OrigComponent, arguments, this.constructor);
       return obj;
-    }
-    // $FlowFixMe
-    Reflect.setPrototypeOf(NewComponent.prototype, OrigComponent.prototype);
-    // $FlowFixMe
+    } // $FlowFixMe
+
+
+    Reflect.setPrototypeOf(NewComponent.prototype, OrigComponent.prototype); // $FlowFixMe
+
     Reflect.setPrototypeOf(NewComponent, OrigComponent);
     return NewComponent;
   }(ComposedComponent);
+
   return ComposedComponent;
 }
 
+var ReactForwardRefSymbol = (0,react__WEBPACK_IMPORTED_MODULE_0__.forwardRef)(function () {
+  return null;
+}).$$typeof;
 function enhanceWithRadium(configOrComposedComponent) {
   var config = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : {};
+
+  if (ReactForwardRefSymbol && configOrComposedComponent.$$typeof === ReactForwardRefSymbol) {
+    return createEnhancedFunctionComponent(configOrComposedComponent.render, config);
+  }
 
   if (typeof configOrComposedComponent !== 'function') {
     return createFactoryFromConfig(config, configOrComposedComponent);
   }
 
-  var origComponent = configOrComposedComponent;
-  var _ComposedComponent2 = origComponent;
+  var origComponent = configOrComposedComponent; // Handle stateless components
 
-  // Radium is transpiled in npm, so it isn't really using es6 classes at
+  if (isStateless(origComponent)) {
+    return createEnhancedFunctionComponent(origComponent, config);
+  }
+
+  var _ComposedComponent2 = origComponent; // Radium is transpiled in npm, so it isn't really using es6 classes at
   // runtime.  However, the user of Radium might be.  In this case we have
   // to maintain forward compatibility with native es classes.
+
   if (isNativeClass(_ComposedComponent2)) {
     _ComposedComponent2 = createComposedFromNativeClass(_ComposedComponent2);
-  }
+  } // Shallow copy composed if still original (we may mutate later).
 
-  // Handle stateless components
-  if (isStateless(_ComposedComponent2)) {
-    _ComposedComponent2 = createComposedFromStatelessFunc(_ComposedComponent2, origComponent);
-  }
 
-  // Shallow copy composed if still original (we may mutate later).
   if (_ComposedComponent2 === origComponent) {
-    _ComposedComponent2 = function (_ComposedComponent3) {
+    _ComposedComponent2 =
+    /*#__PURE__*/
+    function (_ComposedComponent3) {
       _inherits(ComposedComponent, _ComposedComponent3);
 
       function ComposedComponent() {
         _classCallCheck(this, ComposedComponent);
 
-        return _possibleConstructorReturn(this, (ComposedComponent.__proto__ || Object.getPrototypeOf(ComposedComponent)).apply(this, arguments));
+        return _possibleConstructorReturn(this, _getPrototypeOf(ComposedComponent).apply(this, arguments));
       }
 
       return ComposedComponent;
     }(_ComposedComponent2);
   }
 
-  return createEnhancedComponent(origComponent, _ComposedComponent2, config);
+  return createEnhancedClassComponent(origComponent, _ComposedComponent2, config);
 }
 
 function createFactoryFromConfig(config, configOrComposedComponent) {
-  var newConfig = _extends({}, config, configOrComposedComponent);
+  var newConfig = _objectSpread({}, config, configOrComposedComponent);
+
   return function (configOrComponent) {
     return enhanceWithRadium(configOrComponent, newConfig);
   };
@@ -14086,7 +14170,6 @@ __webpack_require__.r(__webpack_exports__);
 
 var getState = function getState(state, elementKey, value) {
   var key = (0,_clean_state_key__WEBPACK_IMPORTED_MODULE_0__["default"])(elementKey);
-
   return !!state && !!state._radiumStyleState && !!state._radiumStyleState[key] && state._radiumStyleState[key][value];
 };
 
@@ -14105,8 +14188,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ hash)
 /* harmony export */ });
-
-
 // a simple djb2 hash based on hash-string:
 // https://github.com/MatthewBarker/hash-string/blob/master/source/hash-string.js
 // returns a hex-encoded hash
@@ -14161,14 +14242,14 @@ __webpack_require__.r(__webpack_exports__);
 
 function Radium(ComposedComponent) {
   return (0,_enhancer__WEBPACK_IMPORTED_MODULE_0__["default"])(ComposedComponent);
-}
-
-// Legacy object support.
+} // Legacy object support.
 //
 // Normally it would be disfavored to attach these to the `Radium` object
 // because it defeats tree-shaking, using instead the ESM exports. But,
 // the `Radium` `Enhancer` uses **all** of these, so there's no extra "cost"
 // to them being explicitly on the `Radium` object.
+
+
 Radium.Plugins = _plugins__WEBPACK_IMPORTED_MODULE_1__["default"];
 Radium.Style = _components_style__WEBPACK_IMPORTED_MODULE_2__["default"];
 Radium.StyleRoot = _components_style_root__WEBPACK_IMPORTED_MODULE_3__["default"];
@@ -14183,9 +14264,8 @@ if (true) {
   };
 }
 
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Radium);
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Radium); // ESM re-exports
 
-// ESM re-exports
 
 
 /***/ }),
@@ -14207,7 +14287,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
 function keyframes(keyframeRules, name) {
   return {
     __radiumKeyframes: true,
@@ -14218,7 +14297,10 @@ function keyframes(keyframeRules, name) {
       }).join('\n');
       var animationName = (name ? name + '-' : '') + 'radium-animation-' + (0,_hash__WEBPACK_IMPORTED_MODULE_2__["default"])(rules);
       var css = '@' + keyframesPrefixed + ' ' + animationName + ' {\n' + rules + '\n}\n';
-      return { css: css, animationName: animationName };
+      return {
+        css: css,
+        animationName: animationName
+      };
     }
   };
 }
@@ -14257,20 +14339,18 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   isNestedStyle: () => (/* binding */ isNestedStyle),
 /* harmony export */   mergeStyles: () => (/* binding */ mergeStyles)
 /* harmony export */ });
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 function isNestedStyle(value) {
   // Don't merge objects overriding toString, since they should be converted
   // to string values.
   return value && value.constructor === Object && value.toString === Object.prototype.toString;
-}
+} // Merge style objects. Deep merge plain object values.
 
-// Merge style objects. Deep merge plain object values.
 function mergeStyles(styles) {
   var result = {};
-
   styles.forEach(function (style) {
-    if (!style || (typeof style === 'undefined' ? 'undefined' : _typeof(style)) !== 'object') {
+    if (!style || _typeof(style) !== 'object') {
       return;
     }
 
@@ -14283,29 +14363,29 @@ function mergeStyles(styles) {
       if (!isNestedStyle(style[key]) || !isNestedStyle(result[key])) {
         result[key] = style[key];
         return;
-      }
-
-      // If nested media, don't merge the nested styles, append a space to the
+      } // If nested media, don't merge the nested styles, append a space to the
       // end (benign when converted to CSS). This way we don't end up merging
       // media queries that appear later in the chain with those that appear
       // earlier.
+
+
       if (key.indexOf('@media') === 0) {
-        var newKey = key;
-        // eslint-disable-next-line no-constant-condition
+        var newKey = key; // eslint-disable-next-line no-constant-condition
+
         while (true) {
           newKey += ' ';
+
           if (!result[newKey]) {
             result[newKey] = style[key];
             return;
           }
         }
-      }
+      } // Merge all other nested styles recursively
 
-      // Merge all other nested styles recursively
+
       result[key] = mergeStyles([result[key], style[key]]);
     });
   });
-
   return result;
 }
 
@@ -14322,9 +14402,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
 
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 var _checkProps = function checkProps() {};
 
@@ -14332,7 +14414,6 @@ if (true) {
   // Warn if you use longhand and shorthand properties in the same style
   // object.
   // https://developer.mozilla.org/en-US/docs/Web/CSS/Shorthand_properties
-
   var shorthandPropertyExpansions = {
     background: ['backgroundAttachment', 'backgroundBlendMode', 'backgroundClip', 'backgroundColor', 'backgroundImage', 'backgroundOrigin', 'backgroundPosition', 'backgroundPositionX', 'backgroundPositionY', 'backgroundRepeat', 'backgroundRepeatX', 'backgroundRepeatY', 'backgroundSize'],
     border: ['borderBottom', 'borderBottomColor', 'borderBottomStyle', 'borderBottomWidth', 'borderColor', 'borderLeft', 'borderLeftColor', 'borderLeftStyle', 'borderLeftWidth', 'borderRight', 'borderRightColor', 'borderRightStyle', 'borderRightWidth', 'borderStyle', 'borderTop', 'borderTopColor', 'borderTopStyle', 'borderTopWidth', 'borderWidth'],
@@ -14349,7 +14430,7 @@ if (true) {
     var componentName = config.componentName,
         style = config.style;
 
-    if ((typeof style === 'undefined' ? 'undefined' : _typeof(style)) !== 'object' || !style) {
+    if (_typeof(style) !== 'object' || !style) {
       return;
     }
 
@@ -14365,9 +14446,10 @@ if (true) {
         }
       }
     });
-
     styleKeys.forEach(function (k) {
-      return _checkProps(_extends({}, config, { style: style[k] }));
+      return _checkProps(_objectSpread({}, config, {
+        style: style[k]
+      }));
     });
     return;
   };
@@ -14396,11 +14478,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _resolve_interaction_styles_plugin__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./resolve-interaction-styles-plugin */ "./node_modules/radium/es/plugins/resolve-interaction-styles-plugin.js");
 /* harmony import */ var _resolve_media_queries_plugin__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./resolve-media-queries-plugin */ "./node_modules/radium/es/plugins/resolve-media-queries-plugin.js");
 /* harmony import */ var _visited_plugin__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./visited-plugin */ "./node_modules/radium/es/plugins/visited-plugin.js");
-
-
-
 /* eslint-disable block-scoped-const */
-
 
 
 
@@ -14433,8 +14511,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ keyframesPlugin)
 /* harmony export */ });
-function keyframesPlugin(_ref // eslint-disable-line no-shadow
-) {
+function keyframesPlugin(_ref) {
   var addCSS = _ref.addCSS,
       config = _ref.config,
       style = _ref.style;
@@ -14465,7 +14542,9 @@ function keyframesPlugin(_ref // eslint-disable-line no-shadow
     newStyleInProgress[key] = value;
     return newStyleInProgress;
   }, {});
-  return { style: newStyle };
+  return {
+    style: newStyle
+  };
 }
 
 /***/ }),
@@ -14481,17 +14560,16 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-
-
 // Convenient syntax for multiple styles: `style={[style1, style2, etc]}`
 // Ignores non-objects, so you can do `this.state.isCool && styles.cool`.
 var mergeStyleArrayPlugin = function mergeStyleArrayPlugin(_ref) {
   var style = _ref.style,
       mergeStyles = _ref.mergeStyles;
-
   // eslint-disable-line no-shadow
   var newStyle = Array.isArray(style) ? mergeStyles(style) : style;
-  return { style: newStyle };
+  return {
+    style: newStyle
+  };
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (mergeStyleArrayPlugin);
@@ -14531,6 +14609,7 @@ var subscribe = function subscribe(callback) {
   return {
     remove: function remove() {
       var index = _callbacks.indexOf(callback);
+
       _callbacks.splice(index, 1);
 
       if (_callbacks.length === 0 && _mouseUpListenerIsActive) {
@@ -14561,16 +14640,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _prefixer__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../prefixer */ "./node_modules/radium/es/prefixer.js");
 
-
-
-
-function prefixPlugin(_ref // eslint-disable-line no-shadow
-) {
+function prefixPlugin(_ref) {
   var config = _ref.config,
       style = _ref.style;
-
   var newStyle = (0,_prefixer__WEBPACK_IMPORTED_MODULE_0__.getPrefixedStyle)(style, config.userAgent);
-  return { style: newStyle };
+  return {
+    style: newStyle
+  };
 }
 
 /***/ }),
@@ -14586,21 +14662,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ removeNestedStyles)
 /* harmony export */ });
-
-
 function removeNestedStyles(_ref) {
   var isNestedStyle = _ref.isNestedStyle,
       style = _ref.style;
-
   // eslint-disable-line no-shadow
   var newStyle = Object.keys(style).reduce(function (newStyleInProgress, key) {
     var value = style[key];
+
     if (!isNestedStyle(value)) {
       newStyleInProgress[key] = value;
     }
+
     return newStyleInProgress;
   }, {});
-
   return {
     style: newStyle
   };
@@ -14622,8 +14696,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _mouse_up_listener__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./mouse-up-listener */ "./node_modules/radium/es/plugins/mouse-up-listener.js");
 
 
-
-
 var _isInteractiveStyleField = function _isInteractiveStyleField(styleFieldName) {
   return styleFieldName === ':hover' || styleFieldName === ':active' || styleFieldName === ':focus';
 };
@@ -14636,23 +14708,22 @@ var resolveInteractionStyles = function resolveInteractionStyles(config) {
       props = config.props,
       setState = config.setState,
       style = config.style;
-
-
   var newComponentFields = {};
-  var newProps = {};
+  var newProps = {}; // Only add handlers if necessary
 
-  // Only add handlers if necessary
   if (style[':hover']) {
     // Always call the existing handler if one is already defined.
     // This code, and the very similar ones below, could be abstracted a bit
     // more, but it hurts readability IMO.
     var existingOnMouseEnter = props.onMouseEnter;
+
     newProps.onMouseEnter = function (e) {
       existingOnMouseEnter && existingOnMouseEnter(e);
       setState(':hover', true);
     };
 
     var existingOnMouseLeave = props.onMouseLeave;
+
     newProps.onMouseLeave = function (e) {
       existingOnMouseLeave && existingOnMouseLeave(e);
       setState(':hover', false);
@@ -14661,6 +14732,7 @@ var resolveInteractionStyles = function resolveInteractionStyles(config) {
 
   if (style[':active']) {
     var existingOnMouseDown = props.onMouseDown;
+
     newProps.onMouseDown = function (e) {
       existingOnMouseDown && existingOnMouseDown(e);
       newComponentFields._lastMouseDown = Date.now();
@@ -14668,16 +14740,20 @@ var resolveInteractionStyles = function resolveInteractionStyles(config) {
     };
 
     var existingOnKeyDown = props.onKeyDown;
+
     newProps.onKeyDown = function (e) {
       existingOnKeyDown && existingOnKeyDown(e);
+
       if (e.key === ' ' || e.key === 'Enter') {
         setState(':active', 'viakeydown');
       }
     };
 
     var existingOnKeyUp = props.onKeyUp;
+
     newProps.onKeyUp = function (e) {
       existingOnKeyUp && existingOnKeyUp(e);
+
       if (e.key === ' ' || e.key === 'Enter') {
         setState(':active', false);
       }
@@ -14686,12 +14762,14 @@ var resolveInteractionStyles = function resolveInteractionStyles(config) {
 
   if (style[':focus']) {
     var existingOnFocus = props.onFocus;
+
     newProps.onFocus = function (e) {
       existingOnFocus && existingOnFocus(e);
       setState(':focus', true);
     };
 
     var existingOnBlur = props.onBlur;
+
     newProps.onBlur = function (e) {
       existingOnBlur && existingOnBlur(e);
       setState(':focus', false);
@@ -14706,25 +14784,23 @@ var resolveInteractionStyles = function resolveInteractionStyles(config) {
         }
       });
     });
-  }
+  } // Merge the styles in the order they were defined
 
-  // Merge the styles in the order they were defined
+
   var interactionStyles = props.disabled ? [style[':disabled']] : Object.keys(style).filter(function (name) {
     return _isInteractiveStyleField(name) && getState(name);
   }).map(function (name) {
     return style[name];
   });
+  var newStyle = mergeStyles([style].concat(interactionStyles)); // Remove interactive styles
 
-  var newStyle = mergeStyles([style].concat(interactionStyles));
-
-  // Remove interactive styles
   newStyle = Object.keys(newStyle).reduce(function (styleWithoutInteractions, name) {
     if (!_isInteractiveStyleField(name) && name !== ':disabled') {
       styleWithoutInteractions[name] = newStyle[name];
     }
+
     return styleWithoutInteractions;
   }, {});
-
   return {
     componentFields: newComponentFields,
     props: newProps,
@@ -14747,15 +14823,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ resolveMediaQueries)
 /* harmony export */ });
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
 
-var _windowMatchMedia = void 0;
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+
+var _windowMatchMedia;
+
 function _getWindowMatchMedia(ExecutionEnvironment) {
   if (_windowMatchMedia === undefined) {
     _windowMatchMedia = !!ExecutionEnvironment.canUseDOM && !!window && !!window.matchMedia && function (mediaQueryString) {
       return window.matchMedia(mediaQueryString);
     } || null;
   }
+
   return _windowMatchMedia;
 }
 
@@ -14773,6 +14853,7 @@ function _removeMediaQueries(style) {
     if (key.indexOf('@media') !== 0) {
       styleWithoutMedia[key] = style[key];
     }
+
     return styleWithoutMedia;
   }, {});
 }
@@ -14785,7 +14866,6 @@ function _topLevelRulesToCSS(_ref) {
       isNestedStyle = _ref.isNestedStyle,
       style = _ref.style,
       userAgent = _ref.userAgent;
-
   var className = '';
   Object.keys(style).filter(function (name) {
     return name.indexOf('@media') === 0;
@@ -14798,14 +14878,11 @@ function _topLevelRulesToCSS(_ref) {
       return;
     }
 
-    var ruleCSS = cssRuleSetToString('', topLevelRules, userAgent);
+    var ruleCSS = cssRuleSetToString('', topLevelRules, userAgent); // CSS classes cannot start with a number
 
-    // CSS classes cannot start with a number
     var mediaQueryClassName = 'rmq-' + hash(query + ruleCSS);
     var css = query + '{ .' + mediaQueryClassName + ruleCSS + '}';
-
     addCSS(css);
-
     className += (className ? ' ' : '') + mediaQueryClassName;
   });
   return className;
@@ -14817,23 +14894,22 @@ function _subscribeToMediaQuery(_ref2) {
       matchMedia = _ref2.matchMedia,
       mediaQueryListsByQuery = _ref2.mediaQueryListsByQuery,
       query = _ref2.query;
-
   query = query.replace('@media ', '');
-
   var mql = mediaQueryListsByQuery[query];
+
   if (!mql && matchMedia) {
     mediaQueryListsByQuery[query] = mql = matchMedia(query);
   }
 
   if (!listenersByQuery || !listenersByQuery[query]) {
     mql.addListener(listener);
-
     listenersByQuery[query] = {
       remove: function remove() {
         mql.removeListener(listener);
       }
     };
   }
+
   return mql;
 }
 
@@ -14854,6 +14930,7 @@ function resolveMediaQueries(_ref3) {
 
   // eslint-disable-line no-shadow
   var newStyle = _removeMediaQueries(style);
+
   var mediaQueryClassNames = _topLevelRulesToCSS({
     addCSS: addCSS,
     appendImportantToEachValue: appendImportantToEachValue,
@@ -14877,9 +14954,9 @@ function resolveMediaQueries(_ref3) {
     };
   }
 
-  var listenersByQuery = _extends({}, getComponentField('_radiumMediaQueryListenersByQuery'));
-  var mediaQueryListsByQuery = getGlobalState('mediaQueryListsByQuery') || {};
+  var listenersByQuery = _objectSpread({}, getComponentField('_radiumMediaQueryListenersByQuery'));
 
+  var mediaQueryListsByQuery = getGlobalState('mediaQueryListsByQuery') || {};
   Object.keys(style).filter(function (name) {
     return name.indexOf('@media') === 0;
   }).map(function (query) {
@@ -14897,19 +14974,20 @@ function resolveMediaQueries(_ref3) {
       matchMedia: matchMedia,
       mediaQueryListsByQuery: mediaQueryListsByQuery,
       query: query
-    });
+    }); // Apply media query states
 
-    // Apply media query states
+
     if (mql.matches) {
       newStyle = mergeStyles([newStyle, nestedRules]);
     }
   });
-
   return {
     componentFields: {
       _radiumMediaQueryListenersByQuery: listenersByQuery
     },
-    globalState: { mediaQueryListsByQuery: mediaQueryListsByQuery },
+    globalState: {
+      mediaQueryListsByQuery: mediaQueryListsByQuery
+    },
     props: newProps,
     style: newStyle
   };
@@ -14928,8 +15006,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ visited)
 /* harmony export */ });
-
-
 function visited(_ref) {
   var addCSS = _ref.addCSS,
       appendImportantToEachValue = _ref.appendImportantToEachValue,
@@ -14938,18 +15014,16 @@ function visited(_ref) {
       hash = _ref.hash,
       props = _ref.props,
       style = _ref.style;
-
   // eslint-disable-line no-shadow
   var className = props.className;
-
   var newStyle = Object.keys(style).reduce(function (newStyleInProgress, key) {
     var value = style[key];
+
     if (key === ':visited') {
       value = appendImportantToEachValue(value);
       var ruleCSS = cssRuleSetToString('', value, config.userAgent);
       var visitedClassName = 'rad-' + hash(ruleCSS);
       var css = '.' + visitedClassName + ':visited' + ruleCSS;
-
       addCSS(css);
       className = (className ? className + ' ' : '') + visitedClassName;
     } else {
@@ -14958,9 +15032,10 @@ function visited(_ref) {
 
     return newStyleInProgress;
   }, {});
-
   return {
-    props: className === props.className ? null : { className: className },
+    props: className === props.className ? null : {
+      className: className
+    },
     style: newStyle
   };
 }
@@ -15002,7 +15077,6 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var inline_style_prefixer_dynamic_plugins_sizing__WEBPACK_IMPORTED_MODULE_10___default = /*#__PURE__*/__webpack_require__.n(inline_style_prefixer_dynamic_plugins_sizing__WEBPACK_IMPORTED_MODULE_10__);
 /* harmony import */ var inline_style_prefixer_dynamic_plugins_transition__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! inline-style-prefixer/dynamic/plugins/transition */ "./node_modules/inline-style-prefixer/dynamic/plugins/transition.js");
 /* harmony import */ var inline_style_prefixer_dynamic_plugins_transition__WEBPACK_IMPORTED_MODULE_11___default = /*#__PURE__*/__webpack_require__.n(inline_style_prefixer_dynamic_plugins_transition__WEBPACK_IMPORTED_MODULE_11__);
-
 
 
 
@@ -15701,7 +15775,6 @@ var ms = ['ms'];
 var wm = ['Webkit', 'Moz'];
 var wms = ['Webkit', 'ms'];
 var wmms = ['Webkit', 'Moz', 'ms'];
-
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   plugins: [(inline_style_prefixer_static_plugins_calc__WEBPACK_IMPORTED_MODULE_0___default()), (inline_style_prefixer_static_plugins_crossFade__WEBPACK_IMPORTED_MODULE_1___default()), (inline_style_prefixer_static_plugins_cursor__WEBPACK_IMPORTED_MODULE_2___default()), (inline_style_prefixer_static_plugins_filter__WEBPACK_IMPORTED_MODULE_3___default()), (inline_style_prefixer_static_plugins_flex__WEBPACK_IMPORTED_MODULE_4___default()), (inline_style_prefixer_static_plugins_flexboxIE__WEBPACK_IMPORTED_MODULE_5___default()), (inline_style_prefixer_static_plugins_flexboxOld__WEBPACK_IMPORTED_MODULE_6___default()), (inline_style_prefixer_static_plugins_gradient__WEBPACK_IMPORTED_MODULE_7___default()), (inline_style_prefixer_static_plugins_imageSet__WEBPACK_IMPORTED_MODULE_8___default()), (inline_style_prefixer_static_plugins_position__WEBPACK_IMPORTED_MODULE_9___default()), (inline_style_prefixer_static_plugins_sizing__WEBPACK_IMPORTED_MODULE_10___default()), (inline_style_prefixer_static_plugins_transition__WEBPACK_IMPORTED_MODULE_11___default())],
   prefixMap: {
@@ -15856,7 +15929,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _prefix_data_static__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./prefix-data/static */ "./node_modules/radium/es/prefix-data/static.js");
 /* harmony import */ var _prefix_data_dynamic__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./prefix-data/dynamic */ "./node_modules/radium/es/prefix-data/dynamic.js");
 /* harmony import */ var _camel_case_props_to_dash_case__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./camel-case-props-to-dash-case */ "./node_modules/radium/es/camel-case-props-to-dash-case.js");
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 /**
  * Based on https://github.com/jsstyles/css-vendor, but without having to
@@ -15870,28 +15943,23 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 
 
-
-
-
-
 var prefixAll = inline_style_prefixer_static_createPrefixer__WEBPACK_IMPORTED_MODULE_0___default()(_prefix_data_static__WEBPACK_IMPORTED_MODULE_3__["default"]);
 var InlineStylePrefixer = inline_style_prefixer_dynamic_createPrefixer__WEBPACK_IMPORTED_MODULE_1___default()(_prefix_data_dynamic__WEBPACK_IMPORTED_MODULE_4__["default"], prefixAll);
 
 function transformValues(style) {
   return Object.keys(style).reduce(function (newStyle, key) {
     var value = style[key];
+
     if (Array.isArray(value)) {
       value = value.join(';' + key + ':');
-    } else if (value && (typeof value === 'undefined' ? 'undefined' : _typeof(value)) === 'object' && typeof value.toString === 'function') {
+    } else if (value && _typeof(value) === 'object' && typeof value.toString === 'function') {
       value = value.toString();
     }
 
     newStyle[key] = value;
     return newStyle;
   }, {});
-}
-
-// Flatten prefixed values that are arrays to strings.
+} // Flatten prefixed values that are arrays to strings.
 //
 // We get prefixed styles back in the form of:
 // - `display: "flex"` OR
@@ -15903,16 +15971,18 @@ function transformValues(style) {
 // browser and server (noted inline below).
 //
 // https://github.com/FormidableLabs/radium/issues/958
+
+
 function flattenStyleValues(style) {
   return Object.keys(style).reduce(function (newStyle, key) {
     var val = style[key];
+
     if (Array.isArray(val)) {
       if ((exenv__WEBPACK_IMPORTED_MODULE_2___default().canUseDOM)) {
         // For the **browser**, when faced with multiple values, we just take
         // the **last** one, which is the original passed in value before
         // prefixing. This _should_ work, because `inline-style-prefixer`
         // we're just passing through what would happen without ISP.
-
         val = val[val.length - 1].toString();
       } else {
         // For the **server**, we just concatenate things together and convert
@@ -15920,11 +15990,10 @@ function flattenStyleValues(style) {
         // "-webkit-flex;display:flex"` that will SSR render correctly to like
         // `"display:-webkit-flex;display:flex"` but would otherwise be
         // totally invalid values.
-
         // We convert keys to dash-case only for the serialize values and
         // leave the real key camel-cased so it's as expected to React and
         // other parts of the processing chain.
-        val = val.join(';' + (0,_camel_case_props_to_dash_case__WEBPACK_IMPORTED_MODULE_5__.camelCaseToDashCase)(key) + ':');
+        val = val.join(";".concat((0,_camel_case_props_to_dash_case__WEBPACK_IMPORTED_MODULE_5__.camelCaseToDashCase)(key), ":"));
       }
     }
 
@@ -15934,8 +16003,10 @@ function flattenStyleValues(style) {
 }
 
 var _hasWarnedAboutUserAgent = false;
-var _lastUserAgent = void 0;
-var _cachedPrefixer = void 0;
+
+var _lastUserAgent;
+
+var _cachedPrefixer;
 
 function getPrefixer(userAgent) {
   var actualUserAgent = userAgent || __webpack_require__.g && __webpack_require__.g.navigator && __webpack_require__.g.navigator.userAgent;
@@ -15945,6 +16016,7 @@ function getPrefixer(userAgent) {
       /* eslint-disable no-console */
       console.warn('Radium: userAgent should be supplied for server-side rendering. See ' + 'https://github.com/FormidableLabs/radium/tree/master/docs/api#radium ' + 'for more information.');
       /* eslint-enable no-console */
+
       _hasWarnedAboutUserAgent = true;
     }
   }
@@ -15956,8 +16028,11 @@ function getPrefixer(userAgent) {
         prefixedKeyframes: 'keyframes'
       };
     } else {
-      _cachedPrefixer = new InlineStylePrefixer({ userAgent: actualUserAgent });
+      _cachedPrefixer = new InlineStylePrefixer({
+        userAgent: actualUserAgent
+      });
     }
+
     _lastUserAgent = actualUserAgent;
   }
 
@@ -15966,10 +16041,9 @@ function getPrefixer(userAgent) {
 
 function getPrefixedKeyframes(userAgent) {
   return getPrefixer(userAgent).prefixedKeyframes || 'keyframes';
-}
-
-// Returns a new style object with vendor prefixes added to property names and
+} // Returns a new style object with vendor prefixes added to property names and
 // values.
+
 function getPrefixedStyle(style, userAgent) {
   var styleWithFallbacks = transformValues(style);
   var prefixer = getPrefixer(userAgent);
@@ -16004,11 +16078,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var exenv__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(exenv__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_1__);
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
+function _objectSpread(target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i] != null ? arguments[i] : {}; var ownKeys = Object.keys(source); if (typeof Object.getOwnPropertySymbols === 'function') { ownKeys = ownKeys.concat(Object.getOwnPropertySymbols(source).filter(function (sym) { return Object.getOwnPropertyDescriptor(source, sym).enumerable; })); } ownKeys.forEach(function (key) { _defineProperty(target, key, source[key]); }); } return target; }
 
-var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
+function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
-
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
 
 
@@ -16024,11 +16098,11 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 var DEFAULT_CONFIG = {
   plugins: [_plugins___WEBPACK_IMPORTED_MODULE_2__["default"].mergeStyleArray, _plugins___WEBPACK_IMPORTED_MODULE_2__["default"].checkProps, _plugins___WEBPACK_IMPORTED_MODULE_2__["default"].resolveMediaQueries, _plugins___WEBPACK_IMPORTED_MODULE_2__["default"].resolveInteractionStyles, _plugins___WEBPACK_IMPORTED_MODULE_2__["default"].keyframes, _plugins___WEBPACK_IMPORTED_MODULE_2__["default"].visited, _plugins___WEBPACK_IMPORTED_MODULE_2__["default"].removeNestedStyles, _plugins___WEBPACK_IMPORTED_MODULE_2__["default"].prefix, _plugins___WEBPACK_IMPORTED_MODULE_2__["default"].checkProps]
-};
+}; // Gross
 
-// Gross
-var globalState = {};
+var globalState = {}; // Only for use by tests
 
+var __isTestModeEnabled = false;
 // Declare early for recursive helpers.
 var _resolveStyles5 = null;
 
@@ -16047,7 +16121,7 @@ var _resolveChildren = function _resolveChildren(_ref) {
     return children;
   }
 
-  var childrenType = typeof children === 'undefined' ? 'undefined' : _typeof(children);
+  var childrenType = _typeof(children);
 
   if (childrenType === 'string' || childrenType === 'number') {
     // Don't do anything with a single primitive child
@@ -16061,12 +16135,13 @@ var _resolveChildren = function _resolveChildren(_ref) {
 
       if (react__WEBPACK_IMPORTED_MODULE_1___default().isValidElement(result)) {
         var _key = (0,_get_state_key__WEBPACK_IMPORTED_MODULE_3__["default"])(result);
+
         delete extraStateKeyMap[_key];
 
         var _resolveStyles = _resolveStyles5(component, result, config, existingKeyMap, true, extraStateKeyMap),
-            _element = _resolveStyles.element;
+            element = _resolveStyles.element;
 
-        return _element;
+        return element;
       }
 
       return result;
@@ -16077,40 +16152,41 @@ var _resolveChildren = function _resolveChildren(_ref) {
     // If a React Element is an only child, don't wrap it in an array for
     // React.Children.map() for React.Children.only() compatibility.
     var onlyChild = react__WEBPACK_IMPORTED_MODULE_1___default().Children.only(children);
+
     var _key2 = (0,_get_state_key__WEBPACK_IMPORTED_MODULE_3__["default"])(onlyChild);
+
     delete extraStateKeyMap[_key2];
 
     var _resolveStyles2 = _resolveStyles5(component, onlyChild, config, existingKeyMap, true, extraStateKeyMap),
-        _element2 = _resolveStyles2.element;
+        element = _resolveStyles2.element;
 
-    return _element2;
+    return element;
   }
 
   return react__WEBPACK_IMPORTED_MODULE_1___default().Children.map(children, function (child) {
     if (react__WEBPACK_IMPORTED_MODULE_1___default().isValidElement(child)) {
       var _key3 = (0,_get_state_key__WEBPACK_IMPORTED_MODULE_3__["default"])(child);
+
       delete extraStateKeyMap[_key3];
 
       var _resolveStyles3 = _resolveStyles5(component, child, config, existingKeyMap, true, extraStateKeyMap),
-          _element3 = _resolveStyles3.element;
+          _element = _resolveStyles3.element;
 
-      return _element3;
+      return _element;
     }
 
     return child;
   });
-};
+}; // Recurse over props, just like children
 
-// Recurse over props, just like children
+
 var _resolveProps = function _resolveProps(_ref2) {
   var component = _ref2.component,
       config = _ref2.config,
       existingKeyMap = _ref2.existingKeyMap,
       props = _ref2.props,
       extraStateKeyMap = _ref2.extraStateKeyMap;
-
   var newProps = props;
-
   Object.keys(props).forEach(function (prop) {
     // We already recurse over children above
     if (prop === 'children') {
@@ -16118,18 +16194,19 @@ var _resolveProps = function _resolveProps(_ref2) {
     }
 
     var propValue = props[prop];
+
     if (react__WEBPACK_IMPORTED_MODULE_1___default().isValidElement(propValue)) {
       var _key4 = (0,_get_state_key__WEBPACK_IMPORTED_MODULE_3__["default"])(propValue);
+
       delete extraStateKeyMap[_key4];
-      newProps = _extends({}, newProps);
+      newProps = _objectSpread({}, newProps);
 
       var _resolveStyles4 = _resolveStyles5(component, propValue, config, existingKeyMap, true, extraStateKeyMap),
-          _element4 = _resolveStyles4.element;
+          element = _resolveStyles4.element;
 
-      newProps[prop] = _element4;
+      newProps[prop] = element;
     }
   });
-
   return newProps;
 };
 
@@ -16137,14 +16214,13 @@ var _buildGetKey = function _buildGetKey(_ref3) {
   var componentName = _ref3.componentName,
       existingKeyMap = _ref3.existingKeyMap,
       renderedElement = _ref3.renderedElement;
-
   // We need a unique key to correlate state changes due to user interaction
   // with the rendered element, so we know to apply the proper interactive
   // styles.
   var originalKey = (0,_get_state_key__WEBPACK_IMPORTED_MODULE_3__["default"])(renderedElement);
   var key = (0,_clean_state_key__WEBPACK_IMPORTED_MODULE_4__["default"])(originalKey);
-
   var alreadyGotKey = false;
+
   var getKey = function getKey() {
     if (alreadyGotKey) {
       return key;
@@ -16153,7 +16229,8 @@ var _buildGetKey = function _buildGetKey(_ref3) {
     alreadyGotKey = true;
 
     if (existingKeyMap[key]) {
-      var elementName = void 0;
+      var elementName;
+
       if (typeof renderedElement.type === 'string') {
         elementName = renderedElement.type;
       } else if (renderedElement.type.constructor) {
@@ -16164,7 +16241,6 @@ var _buildGetKey = function _buildGetKey(_ref3) {
     }
 
     existingKeyMap[key] = true;
-
     return key;
   };
 
@@ -16177,11 +16253,11 @@ var _setStyleState = function _setStyleState(component, key, stateKey, value) {
   }
 
   var existing = (0,_get_radium_style_state__WEBPACK_IMPORTED_MODULE_5__["default"])(component);
-  var state = { _radiumStyleState: _extends({}, existing) };
-
-  state._radiumStyleState[key] = _extends({}, state._radiumStyleState[key]);
+  var state = {
+    _radiumStyleState: _objectSpread({}, existing)
+  };
+  state._radiumStyleState[key] = _objectSpread({}, state._radiumStyleState[key]);
   state._radiumStyleState[key][stateKey] = value;
-
   component._lastRadiumState = state._radiumStyleState;
   component.setState(state);
 };
@@ -16200,30 +16276,34 @@ var _runPlugins = function _runPlugins(_ref4) {
   }
 
   var newProps = props;
-
   var plugins = config.plugins || DEFAULT_CONFIG.plugins;
-
   var componentName = component.constructor.displayName || component.constructor.name;
+
   var getKey = _buildGetKey({
     renderedElement: renderedElement,
     existingKeyMap: existingKeyMap,
     componentName: componentName
   });
+
   var getComponentField = function getComponentField(key) {
     return component[key];
   };
+
   var getGlobalState = function getGlobalState(key) {
     return globalState[key];
   };
+
   var componentGetState = function componentGetState(stateKey, elementKey) {
     return (0,_get_state__WEBPACK_IMPORTED_MODULE_6__["default"])(component.state, elementKey || getKey(), stateKey);
   };
+
   var setState = function setState(stateKey, value, elementKey) {
     return _setStyleState(component, elementKey || getKey(), stateKey, value);
   };
 
   var addCSS = function addCSS(css) {
-    var styleKeeper = component._radiumStyleKeeper || component.context._radiumStyleKeeper;
+    var styleKeeper = component._radiumStyleKeeper;
+
     if (!styleKeeper) {
       if (__isTestModeEnabled) {
         return {
@@ -16238,7 +16318,6 @@ var _runPlugins = function _runPlugins(_ref4) {
   };
 
   var newStyle = props.style;
-
   plugins.forEach(function (plugin) {
     var result = plugin({
       ExecutionEnvironment: (exenv__WEBPACK_IMPORTED_MODULE_0___default()),
@@ -16257,16 +16336,12 @@ var _runPlugins = function _runPlugins(_ref4) {
       isNestedStyle: _merge_styles__WEBPACK_IMPORTED_MODULE_10__.isNestedStyle,
       style: newStyle
     }) || {};
-
     newStyle = result.style || newStyle;
-
-    newProps = result.props && Object.keys(result.props).length ? _extends({}, newProps, result.props) : newProps;
-
+    newProps = result.props && Object.keys(result.props).length ? _objectSpread({}, newProps, result.props) : newProps;
     var newComponentFields = result.componentFields || {};
     Object.keys(newComponentFields).forEach(function (fieldName) {
       component[fieldName] = newComponentFields[fieldName];
     });
-
     var newGlobalState = result.globalState || {};
     Object.keys(newGlobalState).forEach(function (key) {
       globalState[key] = newGlobalState[key];
@@ -16274,38 +16349,42 @@ var _runPlugins = function _runPlugins(_ref4) {
   });
 
   if (newStyle !== props.style) {
-    newProps = _extends({}, newProps, { style: newStyle });
+    newProps = _objectSpread({}, newProps, {
+      style: newStyle
+    });
   }
 
   return newProps;
-};
-
-// Wrapper around React.cloneElement. To avoid processing the same element
+}; // Wrapper around React.cloneElement. To avoid processing the same element
 // twice, whenever we clone an element add a special prop to make sure we don't
 // process this element again.
+
+
 var _cloneElement = function _cloneElement(renderedElement, newProps, newChildren) {
   // Only add flag if this is a normal DOM element
   if (typeof renderedElement.type === 'string') {
-    newProps = _extends({}, newProps, { 'data-radium': true });
+    newProps = _objectSpread({}, newProps, {
+      'data-radium': true
+    });
   }
 
   return react__WEBPACK_IMPORTED_MODULE_1___default().cloneElement(renderedElement, newProps, newChildren);
-};
-
-//
+}; //
 // The nucleus of Radium. resolveStyles is called on the rendered elements
 // before they are returned in render. It iterates over the elements and
 // children, rewriting props to add event handlers required to capture user
 // interactions (e.g. mouse over). It also replaces the style prop because it
 // adds in the various interaction styles (e.g. :hover).
 //
+
 /* eslint-disable max-params */
-_resolveStyles5 = function resolveStyles(component, // ReactComponent, flow+eslint complaining
-renderedElement) {
+
+
+_resolveStyles5 = function resolveStyles(component, renderedElement) {
   var config = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : DEFAULT_CONFIG;
   var existingKeyMap = arguments.length > 3 && arguments[3] !== undefined ? arguments[3] : {};
   var shouldCheckBeforeResolve = arguments.length > 4 && arguments[4] !== undefined ? arguments[4] : false;
-  var extraStateKeyMap = arguments[5];
+  var extraStateKeyMap = arguments.length > 5 ? arguments[5] : undefined;
 
   // The extraStateKeyMap is for determining which keys should be erased from
   // the state (i.e. which child components are unmounted and should no longer
@@ -16320,6 +16399,7 @@ renderedElement) {
       if (key !== 'main') {
         acc[key] = true;
       }
+
       return acc;
     }, {});
   }
@@ -16329,30 +16409,32 @@ renderedElement) {
       // element is in-use, so remove from the extraStateKeyMap
       if (extraStateKeyMap) {
         var _key5 = (0,_get_state_key__WEBPACK_IMPORTED_MODULE_3__["default"])(element);
-        delete extraStateKeyMap[_key5];
-      }
 
-      // this element is an array of elements,
+        delete extraStateKeyMap[_key5];
+      } // this element is an array of elements,
       // so return an array of elements with resolved styles
+
+
       return _resolveStyles5(component, element, config, existingKeyMap, shouldCheckBeforeResolve, extraStateKeyMap).element;
     });
     return {
       extraStateKeyMap: extraStateKeyMap,
       element: elements
     };
-  }
+  } // ReactElement
 
-  // ReactElement
-  if (!renderedElement ||
-  // Bail if we've already processed this element. This ensures that only the
+
+  if (!renderedElement || // Bail if we've already processed this element. This ensures that only the
   // owner of an element processes that element, since the owner's render
   // function will be called first (which will always be the case, since you
   // can't know what else to render until you render the parent component).
-  renderedElement.props && renderedElement.props['data-radium'] ||
-  // Bail if this element is a radium enhanced element, because if it is,
+  renderedElement.props && renderedElement.props['data-radium'] || // Bail if this element is a radium enhanced element, because if it is,
   // then it will take care of resolving its own styles.
   shouldCheckBeforeResolve && !_shouldResolveStyles(renderedElement)) {
-    return { extraStateKeyMap: extraStateKeyMap, element: renderedElement };
+    return {
+      extraStateKeyMap: extraStateKeyMap,
+      element: renderedElement
+    };
   }
 
   var children = renderedElement.props.children;
@@ -16379,27 +16461,33 @@ renderedElement) {
     existingKeyMap: existingKeyMap,
     props: newProps,
     renderedElement: renderedElement
-  });
-
-  // If nothing changed, don't bother cloning the element. Might be a bit
+  }); // If nothing changed, don't bother cloning the element. Might be a bit
   // wasteful, as we add the sentinel to stop double-processing when we clone.
   // Assume benign double-processing is better than unneeded cloning.
+
   if (newChildren === children && newProps === renderedElement.props) {
-    return { extraStateKeyMap: extraStateKeyMap, element: renderedElement };
+    return {
+      extraStateKeyMap: extraStateKeyMap,
+      element: renderedElement
+    };
   }
 
   var element = _cloneElement(renderedElement, newProps !== renderedElement.props ? newProps : {}, newChildren);
 
-  return { extraStateKeyMap: extraStateKeyMap, element: element };
+  return {
+    extraStateKeyMap: extraStateKeyMap,
+    element: element
+  };
 };
 /* eslint-enable max-params */
-
 // Only for use by tests
-var __isTestModeEnabled = false;
+
+
 if (true) {
   _resolveStyles5.__clearStateForTests = function () {
     globalState = {};
   };
+
   _resolveStyles5.__setTestMode = function (isEnabled) {
     __isTestModeEnabled = isEnabled;
   };
@@ -16420,21 +16508,28 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (/* binding */ StyleKeeper)
 /* harmony export */ });
-var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
-
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
 
-var StyleKeeper = function () {
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+var StyleKeeper =
+/*#__PURE__*/
+function () {
   function StyleKeeper(userAgent) {
     _classCallCheck(this, StyleKeeper);
 
+    this._userAgent = void 0;
+    this._listeners = void 0;
+    this._cssSet = void 0;
     this._userAgent = userAgent;
     this._listeners = [];
     this._cssSet = {};
   }
 
   _createClass(StyleKeeper, [{
-    key: 'subscribe',
+    key: "subscribe",
     value: function subscribe(listener) {
       var _this = this;
 
@@ -16446,6 +16541,7 @@ var StyleKeeper = function () {
         // Must be fat arrow to capture `this`
         remove: function remove() {
           var listenerIndex = _this._listeners.indexOf(listener);
+
           if (listenerIndex > -1) {
             _this._listeners.splice(listenerIndex, 1);
           }
@@ -16453,12 +16549,13 @@ var StyleKeeper = function () {
       };
     }
   }, {
-    key: 'addCSS',
+    key: "addCSS",
     value: function addCSS(css) {
       var _this2 = this;
 
       if (!this._cssSet[css]) {
         this._cssSet[css] = true;
+
         this._emitChange();
       }
 
@@ -16466,17 +16563,18 @@ var StyleKeeper = function () {
         // Must be fat arrow to capture `this`
         remove: function remove() {
           delete _this2._cssSet[css];
+
           _this2._emitChange();
         }
       };
     }
   }, {
-    key: 'getCSS',
+    key: "getCSS",
     value: function getCSS() {
       return Object.keys(this._cssSet).join('\n');
     }
   }, {
-    key: '_emitChange',
+    key: "_emitChange",
     value: function _emitChange() {
       this._listeners.forEach(function (listener) {
         return listener();
@@ -16487,6 +16585,120 @@ var StyleKeeper = function () {
   return StyleKeeper;
 }();
 
+
+
+/***/ }),
+
+/***/ "./node_modules/radium/node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js":
+/*!******************************************************************************************************!*\
+  !*** ./node_modules/radium/node_modules/hoist-non-react-statics/dist/hoist-non-react-statics.cjs.js ***!
+  \******************************************************************************************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+
+
+/**
+ * Copyright 2015, Yahoo! Inc.
+ * Copyrights licensed under the New BSD License. See the accompanying LICENSE file for terms.
+ */
+var ReactIs = __webpack_require__(/*! react-is */ "./node_modules/react-is/index.js");
+var REACT_STATICS = {
+    childContextTypes: true,
+    contextType: true,
+    contextTypes: true,
+    defaultProps: true,
+    displayName: true,
+    getDefaultProps: true,
+    getDerivedStateFromError: true,
+    getDerivedStateFromProps: true,
+    mixins: true,
+    propTypes: true,
+    type: true
+};
+
+var KNOWN_STATICS = {
+    name: true,
+    length: true,
+    prototype: true,
+    caller: true,
+    callee: true,
+    arguments: true,
+    arity: true
+};
+
+var FORWARD_REF_STATICS = {
+    '$$typeof': true,
+    render: true,
+    defaultProps: true,
+    displayName: true,
+    propTypes: true
+};
+
+var MEMO_STATICS = {
+    '$$typeof': true,
+    compare: true,
+    defaultProps: true,
+    displayName: true,
+    propTypes: true,
+    type: true
+};
+
+var TYPE_STATICS = {};
+TYPE_STATICS[ReactIs.ForwardRef] = FORWARD_REF_STATICS;
+
+function getStatics(component) {
+    if (ReactIs.isMemo(component)) {
+        return MEMO_STATICS;
+    }
+    return TYPE_STATICS[component['$$typeof']] || REACT_STATICS;
+}
+
+var defineProperty = Object.defineProperty;
+var getOwnPropertyNames = Object.getOwnPropertyNames;
+var getOwnPropertySymbols = Object.getOwnPropertySymbols;
+var getOwnPropertyDescriptor = Object.getOwnPropertyDescriptor;
+var getPrototypeOf = Object.getPrototypeOf;
+var objectPrototype = Object.prototype;
+
+function hoistNonReactStatics(targetComponent, sourceComponent, blacklist) {
+    if (typeof sourceComponent !== 'string') {
+        // don't hoist over string (html) components
+
+        if (objectPrototype) {
+            var inheritedComponent = getPrototypeOf(sourceComponent);
+            if (inheritedComponent && inheritedComponent !== objectPrototype) {
+                hoistNonReactStatics(targetComponent, inheritedComponent, blacklist);
+            }
+        }
+
+        var keys = getOwnPropertyNames(sourceComponent);
+
+        if (getOwnPropertySymbols) {
+            keys = keys.concat(getOwnPropertySymbols(sourceComponent));
+        }
+
+        var targetStatics = getStatics(targetComponent);
+        var sourceStatics = getStatics(sourceComponent);
+
+        for (var i = 0; i < keys.length; ++i) {
+            var key = keys[i];
+            if (!KNOWN_STATICS[key] && !(blacklist && blacklist[key]) && !(sourceStatics && sourceStatics[key]) && !(targetStatics && targetStatics[key])) {
+                var descriptor = getOwnPropertyDescriptor(sourceComponent, key);
+                try {
+                    // Avoid failures from read-only properties
+                    defineProperty(targetComponent, key, descriptor);
+                } catch (e) {}
+            }
+        }
+
+        return targetComponent;
+    }
+
+    return targetComponent;
+}
+
+module.exports = hoistNonReactStatics;
 
 
 /***/ }),

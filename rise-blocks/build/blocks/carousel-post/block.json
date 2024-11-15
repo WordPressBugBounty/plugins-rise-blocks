@@ -279,6 +279,37 @@
         }
       }
     },
+    "contentTypo": {
+      "type": "object",
+      "default": {
+        "fontFamily": "",
+        "fontSize": {
+          "units": [
+            "px",
+            "em",
+            "rem"
+          ],
+          "activeUnit": "px",
+          "values": {
+            "desktop": 14,
+            "tablet": 14,
+            "mobile": 14
+          }
+        },
+        "fontWeight": 400,
+        "lineHeight": {
+          "activeUnit": "",
+          "units": [
+            ""
+          ],
+          "values": {
+            "desktop": "1.2",
+            "tablet": "1.2",
+            "mobile": "1.2"
+          }
+        }
+      }
+    },
     "padding": {
       "type": "object",
       "default": {
@@ -321,9 +352,17 @@
         }
       }
     },
+    "excerptLength": {
+      "type": "number",
+      "default": 20
+    },
     "enableTitle": {
       "type": "boolean",
       "default": true
+    },
+    "enableContent": {
+      "type": "boolean",
+      "default": false
     },
     "enableCategory": {
       "type": "boolean",

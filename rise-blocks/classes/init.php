@@ -30,8 +30,6 @@ if (!class_exists('Rise_Blocks_Init')) {
 
             if (version_compare($GLOBALS['wp_version'], '5.8-alpha-1', '<')) {
                 add_filter('block_categories', array(__CLASS__, 'register_category'), 10, 2);
-            } else {
-                add_filter('block_categories_all', array(__CLASS__, 'register_category'), 10, 2);
             }
 
             self::includes(array('admin', 'header', 'footer'));
@@ -241,7 +239,7 @@ if (!class_exists('Rise_Blocks_Init')) {
                 'site-identity',
                 'navigation-menu',
                 'image-slider',
-                'image-text-slider',
+                'image-text-slider'
             ), 'classes/blocks');
 
             self::includes(array(

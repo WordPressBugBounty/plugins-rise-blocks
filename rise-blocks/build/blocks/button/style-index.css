@@ -24,4 +24,14 @@
   order: 1;
 }
 
+.wp-block-rise-blocks-buttons.alignleft,
+.wp-block-rise-blocks-buttons.alignright {
+  float: unset !important;
+  text-align: left;
+}
+
+.wp-block-rise-blocks-buttons.alignright {
+  text-align: right;
+}
+
 /*# sourceMappingURL=style-index.css.map*/

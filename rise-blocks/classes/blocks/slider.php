@@ -636,10 +636,10 @@ $js = ob_get_clean();
 											</<?php echo esc_attr($attrs['tag']); ?>>
 
 											<?php if ($attrs['enableContent']): ?>
-												<div class="<?php self::add_prefix_e('%prefix-banner-text-content');?>">
-													<?php self::excerpt($attrs['excerptLength']);?>
-												</div>
-											<?php endif;?>
+                                                <div class="<?php self::add_prefix_e('%prefix-banner-text-content');?>">
+                                                    <?php self::excerpt($attrs['excerptLength']);?>
+                                                </div>
+                                            <?php endif;?>
 
 											<?php if (!$attrs['sectionClickable']): ?>
 												<div class="<?php self::add_prefix_e('%prefix-banner-btn-group');?>">

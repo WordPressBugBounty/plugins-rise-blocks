@@ -96,4 +96,24 @@
   }
 }
 
+.rise-blocks-news-1-wrapper.rise-blocks-align-center {
+  text-align: center;
+}
+.rise-blocks-news-1-wrapper.rise-blocks-align-center .rise-blocks-news-1-meta-wrapper {
+  justify-content: center;
+}
+.rise-blocks-news-1-wrapper.rise-blocks-align-center .rise-blocks-news-1-card-wrapper {
+  justify-content: center;
+}
+
+.rise-blocks-news-1-wrapper.rise-blocks-align-right {
+  text-align: right;
+}
+.rise-blocks-news-1-wrapper.rise-blocks-align-right .rise-blocks-news-1-meta-wrapper {
+  justify-content: flex-end;
+}
+.rise-blocks-news-1-wrapper.rise-blocks-align-right .rise-blocks-news-1-card-wrapper {
+  justify-content: flex-end;
+}
+
 /*# sourceMappingURL=style-index.css.map*/

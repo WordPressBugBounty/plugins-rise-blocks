@@ -184,7 +184,7 @@ if( !class_exists( 'Rise_Blocks_News_2' ) ){
 							'props'    => $meta_typo[ $device ]
 						),
 						array(
-							'selector' => self::add_prefix( '.%prefix-news-2-post-content p' ),
+							'selector' => self::add_prefix( '.%prefix-news-2-post-content' ),
 							'props'    => $content_typo[ $device ]
 						),
 						array(
@@ -225,7 +225,13 @@ if( !class_exists( 'Rise_Blocks_News_2' ) ){
 						)
 					),
 					array(
-						'selector' => self::add_prefix( '.%prefix-news-2-post-content p' ),
+						'selector' => self::add_prefix( '.%prefix-news-2-post-title:hover a' ),
+						'props'    => array(
+							'color' => 'color'
+						)
+					),
+					array(
+						'selector' => self::add_prefix( '.%prefix-news-2-post-content' ),
 						'props'    => array(
 							'color' => 'color'
 						)
@@ -413,6 +419,31 @@ if( !class_exists( 'Rise_Blocks_News_2' ) ){
 						)
 					)
 				),
+				'contentTypo' => array(
+					'type' => 'object',
+					'default' => array(
+						'fontFamily' => 'Roboto',
+						'fontSize'   => array(
+							'units' => array( 'px', 'em', 'rem' ),
+							'activeUnit' => 'px',
+							'values' => array(
+								'desktop' => 14,
+								'tablet'  => 14,
+								'mobile'  => 14
+							)
+						),
+						'fontWeight' => 400,
+						'lineHeight' => array(
+							'activeUnit' => '',
+							'units'      => array( '' ),
+							'values'     => array(
+								'desktop' => '1.2',
+								'tablet'  => '1.2',
+								'mobile'  => '1.2'
+							)
+						)
+					)
+				),
 				'padding' => array(
 					'type' => 'object',
 					'default' => array(
@@ -432,6 +463,10 @@ if( !class_exists( 'Rise_Blocks_News_2' ) ){
 				'enableTitle' => array(
 					'type' => 'boolean',
 					'default' => true
+				),
+				'enableContent' => array(
+					'type' => 'boolean',
+					'default' => false
 				),
 				'enableCategory' => array(
 					'type' => 'boolean',
@@ -469,6 +504,10 @@ if( !class_exists( 'Rise_Blocks_News_2' ) ){
 				'slidesToShow' => array(
 					'type' => 'number',
 					'default' => 3
+				),
+				'excerptLength' => array(
+					'type' => 'number',
+					'default' => 20
 				)
 			);
 		}
@@ -558,7 +597,7 @@ if( !class_exists( 'Rise_Blocks_News_2' ) ){
 			            }
 
 				    ?>
-			            <div class="<?php self::add_prefix_e( '%prefix-news-2-card-wrapper' );  ?>">
+			            <div class="<?php self::add_prefix_e( '%prefix-news-2-card-wrapper %prefix-align-' . esc_attr( $attrs[ 'alignment' ] ) );  ?>">
 
 			            	<div>
 			            	    <div style="background-image: url(<?php echo esc_url( $src ); ?>)" class="<?php self::add_prefix_e( '%prefix-news-2-card-image' ); ?>">                                                
@@ -584,6 +623,12 @@ if( !class_exists( 'Rise_Blocks_News_2' ) ){
 		    	                                </a>
 		    	                            </h2>
 		                            	<?php endif; ?>
+
+		                            	<?php if ($attrs['enableContent']): ?>
+											<div class="<?php self::add_prefix_e('%prefix-news-2-post-content');?>">
+												<?php self::excerpt($attrs['excerptLength']);?>
+											</div>
+										<?php endif;?>
 
 					                    <?php if( $attrs[ 'enableAuthor' ] || $attrs[ 'enableDate' ] ): ?>
 					                        <div class="<?php self::add_prefix_e( '%prefix-news-2-meta-wrapper' ); ?>">

@@ -242,9 +242,9 @@ if (!class_exists('Rise_Blocks_Image_Slider')) {
                             'max' => 12,
                         ),
                         'values' => array(
-                            'desktop' => 5,
-                            'tablet' => 3,
-                            'mobile' => 2,
+                            'desktop' => 1,
+                            'tablet'  => 1,
+                            'mobile'  => 1,
                         )
                     ),
                 ),
@@ -254,11 +254,11 @@ if (!class_exists('Rise_Blocks_Image_Slider')) {
                 ),
                 'enableArrows' => array(
                     'type' => 'boolean',
-                    'default' => false,
+                    'default' => true,
                 ),
                 'enableDots' => array(
                     'type' => 'boolean',
-                    'default' => false,
+                    'default' => true,
                 ),
                 'height' => array(
                     'type' => 'object',

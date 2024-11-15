@@ -5,7 +5,7 @@
   "version": "3.1.1",
   "title": "Accordion Item",
   "category": "rise-blocks",
-  "support": {
+  "supports": {
     "className": false
   },
   "attributes": {

@@ -35,4 +35,12 @@
   display: none;
 }
 
+.alignright:has(.wp-block-rise-blocks-icon-lists.alignright) {
+  float: none !important;
+}
+
+.alignleft:has(.wp-block-rise-blocks-icon-lists.alignleft) {
+  float: none !important;
+}
+
 /*# sourceMappingURL=style-index.css.map*/

@@ -65,9 +65,9 @@
           "max": 12
         },
         "values": {
-          "desktop": 5,
-          "tablet": 3,
-          "mobile": 2
+          "desktop": 1,
+          "tablet": 1,
+          "mobile": 1
         }
       }
     },
@@ -81,11 +81,11 @@
     },
     "enableDots": {
       "type": "boolean",
-      "default": false
+      "default": true
     },
     "enableArrows": {
       "type": "boolean",
-      "default": false
+      "default": true
     },
     "height": {
       "type": "object",

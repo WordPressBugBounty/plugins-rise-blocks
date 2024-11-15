@@ -7428,7 +7428,7 @@ module.exports = window["wp"]["i18n"];
 /***/ ((module) => {
 
 "use strict";
-module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"rise-blocks/accordion-item","version":"3.1.1","title":"Accordion Item","category":"rise-blocks","support":{"className":false},"attributes":{"block_id":{"type":"string"},"title":{"type":"string"},"headingTypo":{"type":"object"},"contentTypo":{"type":"object"},"headingPadding":{"type":"object"},"contentPadding":{"type":"object"},"tag":{"type":"string"},"headingBackground":{"type":"string","default":"#f6f6f6"},"headingActiveBackground":{"type":"string","default":"#007fff"},"headingColor":{"type":"string"},"headingActiveColor":{"type":"string"}},"textdomain":"rise-blocks","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
+module.exports = JSON.parse('{"$schema":"https://schemas.wp.org/trunk/block.json","apiVersion":3,"name":"rise-blocks/accordion-item","version":"3.1.1","title":"Accordion Item","category":"rise-blocks","supports":{"className":false},"attributes":{"block_id":{"type":"string"},"title":{"type":"string"},"headingTypo":{"type":"object"},"contentTypo":{"type":"object"},"headingPadding":{"type":"object"},"contentPadding":{"type":"object"},"tag":{"type":"string"},"headingBackground":{"type":"string","default":"#f6f6f6"},"headingActiveBackground":{"type":"string","default":"#007fff"},"headingColor":{"type":"string"},"headingActiveColor":{"type":"string"}},"textdomain":"rise-blocks","editorScript":"file:./index.js","editorStyle":"file:./index.css","style":"file:./style-index.css"}');
 
 /***/ })
 

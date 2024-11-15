@@ -33,4 +33,13 @@
   margin-bottom: 20px;
 }
 
+.wp-block-rise-blocks-icon-lists.alignright {
+  float: none !important;
+  margin-inline-start: unset !important;
+}
+
+.wp-block-rise-blocks-icon-lists.alignleft {
+  float: none !important;
+}
+
 /*# sourceMappingURL=index.css.map*/

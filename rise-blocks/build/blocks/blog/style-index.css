@@ -87,33 +87,32 @@
   flex: 100%;
 }
 .rise-blocks-blog-wrapper.rise-blocks-item-2-per-row .rise-blocks-blog-card-wrapper {
-  max-width: 50%;
-  flex: 50%;
+  flex-basis: calc(50% - 30px);
+}
+@media (max-width: 576px) {
+  .rise-blocks-blog-wrapper.rise-blocks-item-2-per-row .rise-blocks-blog-card-wrapper {
+    flex: 100%;
+  }
 }
 .rise-blocks-blog-wrapper.rise-blocks-item-3-per-row .rise-blocks-blog-card-wrapper {
-  max-width: 33.33%;
-  flex: 33.33%;
+  flex-basis: calc(33.33% - 30px);
 }
 @media (max-width: 576px) {
   .rise-blocks-blog-wrapper.rise-blocks-item-3-per-row .rise-blocks-blog-card-wrapper {
-    max-width: 100%;
-    flex: 100%;
+    flex-basis: 100%;
   }
 }
 .rise-blocks-blog-wrapper.rise-blocks-item-4-per-row .rise-blocks-blog-card-wrapper {
-  max-width: 25%;
-  flex: 25%;
+  flex-basis: calc(25% - 30px);
 }
 @media (max-width: 768px) {
   .rise-blocks-blog-wrapper.rise-blocks-item-4-per-row .rise-blocks-blog-card-wrapper {
-    max-width: 50%;
-    flex: 50%;
+    flex-basis: calc(50% - 30px);
   }
 }
 @media (max-width: 576px) {
   .rise-blocks-blog-wrapper.rise-blocks-item-4-per-row .rise-blocks-blog-card-wrapper {
-    max-width: 100%;
-    flex: 100%;
+    flex-basis: 100%;
   }
 }
 

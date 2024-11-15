@@ -164,4 +164,28 @@
   font-size: 20px;
 }
 
+.rise-blocks-align-center {
+  text-align: center;
+}
+
+.rise-blocks-align-left {
+  text-align: left;
+}
+
+.rise-blocks-align-right {
+  text-align: right;
+}
+
+.rise-blocks-align-right .rise-blocks-news-2-meta-wrapper {
+  justify-content: right;
+}
+
+.rise-blocks-align-left .rise-blocks-news-2-meta-wrapper {
+  justify-content: left;
+}
+
+.rise-blocks-align-center .rise-blocks-news-2-meta-wrapper {
+  justify-content: center;
+}
+
 /*# sourceMappingURL=style-index.css.map*/

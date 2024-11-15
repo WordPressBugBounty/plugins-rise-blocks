@@ -915,11 +915,13 @@
 .rise-blocks-importer-data-box-wrapper.rise-blocks-demo-cat-templates img {
   height: 250px;
   overflow: hidden;
+  object-fit: contain;
 }
 @media (min-width: 1570px) {
   .rise-blocks-importer-data-box-wrapper.rise-blocks-demo-cat-templates img {
     max-height: 330px;
     height: 100%;
+    object-fit: contain;
   }
 }
 .rise-blocks-importer-data-box-wrapper .rise-blocks-importer-data-box {
@@ -1341,13 +1343,6 @@ input.block-editor-url-input__input {
 .rise-blocks-lists ul {
   list-style: none;
   padding: 0;
-}
-
-.block-editor-writing-flow,
-.blocks-widgets-container .editor-styles-wrapper {
-  max-width: 820px;
-  margin: auto;
-  width: 100%;
 }
 
 /*# sourceMappingURL=editor.css.map */

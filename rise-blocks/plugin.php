@@ -5,7 +5,7 @@
  * Description: Create a stunning website or a desired blog of your choice with zero knowledge in coding.
  * Author: Rise Themes
  * Author URI: https://www.eaglevisionit.com/
- * Version: 3.5
+ * Version: 3.6
  * License: GPL2+
  * License URI: https://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain: rise-blocks
@@ -22,7 +22,7 @@ define( 'Rise_Blocks_Dir', __DIR__ );
 define( 'Rise_Blocks_File', __FILE__ );
 define( 'Rise_Blocks_Url', plugin_dir_url( __FILE__ ) );
 define( 'Rise_Blocks_Root', dirname( plugin_basename( Rise_Blocks_File ) ) );
-define( 'Rise_Blocks_Version', '3.5' );
+define( 'Rise_Blocks_Version', '3.6' );
 define( 'Rise_Blocks_Debug', $env == 'production' ? false: true );
 define( 'Rise_Blocks_Prefix', 'rise-blocks' );
 
