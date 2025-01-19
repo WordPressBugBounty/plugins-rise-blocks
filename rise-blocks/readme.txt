@@ -1,6 +1,6 @@
 === Rise Blocks - A Complete Gutenberg Page Builder ===
 Contributors: risethemes, uzess, pradip56, bhuwanroka
-Tags: gutenberg, blocks, gutenberg blocks, editor, block, fse
+Tags: gutenberg, blocks, gutenberg blocks, editor, fse
 Requires at least: 4.7
 Requires PHP: 5.6
 Tested up to: 6.7
