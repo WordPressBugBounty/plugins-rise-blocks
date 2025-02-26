@@ -64,7 +64,7 @@ if( !class_exists( 'Rise_Blocks_Buttons' ) ){
 		* @since 1.0.3
 		* @var array
 		*/
-		protected $blocks = array();
+		protected $blocks = [];
 
 		/**
 		* The object instance.
@@ -122,17 +122,17 @@ if( !class_exists( 'Rise_Blocks_Buttons' ) ){
 
 				foreach( self::$devices as $device ){
 
-					$css = array(
-						array(
+					$css = [
+						[
 							'props' => $padding[ $device ]
-						)
-					);
+						]
+					];
 
 					self::add_styles(
-						array(
+						[
 							'attrs' => $attrs,
-							'css' => $css
-						),
+							'css'   => $css
+						],
 						$device
 					);
 				};

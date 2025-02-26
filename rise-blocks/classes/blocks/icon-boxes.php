@@ -66,7 +66,7 @@ if( !class_exists( 'Rise_Blocks_Icon_Boxes' ) ){
 		* @since 1.0.0
 		* @var array
 		*/
-		protected $blocks = array();
+		protected $blocks = [];
 
 		/**
 		* The object instance.
@@ -129,23 +129,23 @@ if( !class_exists( 'Rise_Blocks_Icon_Boxes' ) ){
 				$selector = self::add_prefix( '.%prefix-save .%prefix-block-lists > div' ); 
 
 				/* Gutter Width */
-				$responsive_gutter_val = array(
-					'desktop' => array(
+				$responsive_gutter_val = [
+					'desktop' => [
 						'items_per_row' => $items_per_row, 
 						'gutter'=> $gutter_size 
-					),
-					'tablet' => array( 'gutter'=> $gutter_size ),
-					'mobile' => array( 'gutter'=> $gutter_size ),
-				);
+					],
+					'tablet' => [ 'gutter'=> $gutter_size ],
+					'mobile' => [ 'gutter'=> $gutter_size ],
+				];
 
 				$responsive_css = self::get_gutter_properties($selector, $responsive_gutter_val);
 
 				foreach( $responsive_css as $key => $css){
 					self::add_styles(
-						array(
+						[
 							'attrs' => $attrs,
 							'css' => $css
-						),
+						],
 						$key
 					);
 				};

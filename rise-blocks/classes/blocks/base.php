@@ -21,10 +21,10 @@ if (!class_exists('Rise_Blocks_Base')):
          *
          * @var array
          */
-        protected static $fonts = array(
+        protected static $fonts = [
             # Lato is a default font for this plugin
             'Lato' => 'Lato:300,400,700,900',
-        );
+        ];
 
         public static $fse_content = '';
 
@@ -39,7 +39,7 @@ if (!class_exists('Rise_Blocks_Base')):
          * @access protected
          * @since 1.0.0
          */
-        protected static $styles = array('mobile' => array(), 'tablet' => array(), 'desktop' => array());
+        protected static $styles = [ 'mobile' => [], 'tablet' => [], 'desktop' => [] ];
 
         /**
          * Store arrays of inline scripts
@@ -48,7 +48,7 @@ if (!class_exists('Rise_Blocks_Base')):
          * @access protected
          * @since 1.0.0
          */
-        protected static $scripts = array();
+        protected static $scripts = [];
 
         /**
          * Initialize Block
@@ -65,28 +65,28 @@ if (!class_exists('Rise_Blocks_Base')):
             remove_filter( 'the_content', 'wpautop' );
 
             if( isset( $this->is_pro ) && $this->is_pro ){
-                add_action( 'init', array( $this, 'register' ), 10 );
+                add_action( 'init', [ $this, 'register' ], 10 );
             }else{
-                add_action( 'init', array( $this, 'register' ), 20 );
+                add_action( 'init', [ $this, 'register' ], 20 );
             }
             
 
             if( method_exists( $this, 'enqueue_scripts_styles' ) ){
-                add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts_styles' ) );
+                add_action( 'wp_enqueue_scripts', [ $this, 'enqueue_scripts_styles' ] );
             }
 
             if( method_exists( $this, 'block_assets' ) ){
-                add_action( 'enqueue_block_assets', array( $this, 'block_assets' ) );
+                add_action( 'enqueue_block_assets', [ $this, 'block_assets' ] );
             }
 
             if( method_exists( $this, 'prepare_scripts_styles' ) ){
-                add_action( self::get_block_name( $this->slug ) . '_run_prepared_scripts_styles', array( $this, 'prepare_scripts_styles' ) );
-                add_action('wp_enqueue_scripts', array( $this, 'init_prepared_scripts_styles' ) );
+                add_action( self::get_block_name( $this->slug ) . '_run_prepared_scripts_styles', [ $this, 'prepare_scripts_styles' ] );
+                add_action('wp_enqueue_scripts', [ $this, 'init_prepared_scripts_styles' ] );
             }
 
             if( self::$counter === 0 ){
-                add_action( 'wp_head', array( __CLASS__, 'inline_scripts_styles' ), 99 );
-                add_action( 'wp_enqueue_scripts', array( __CLASS__, 'enqueue_fonts' ), 99 );
+                add_action( 'wp_head', [ __CLASS__, 'inline_scripts_styles' ], 99 );
+                add_action( 'wp_enqueue_scripts', [ __CLASS__, 'enqueue_fonts' ], 99 );
                 self::$counter++;
             }
         }
@@ -109,14 +109,14 @@ if (!class_exists('Rise_Blocks_Base')):
          * @since 1.0.0
          */
         public static function enqueue_fonts(){
-            $scripts = array(
-                array(
-                    'handler' => self::add_prefix('%prefix-fonts'),
-                    'style' => '//fonts.googleapis.com/css?family=' . join('|', self::$fonts) . '&display=swap',
+            $scripts = [
+                [
+                    'handler'  => self::add_prefix( '%prefix-fonts' ),
+                    'style'    => '//fonts.googleapis.com/css?family=' . join( '|', self::$fonts ) . '&display=swap',
                     'absolute' => true,
                     'minified' => false,
-                ),
-            );
+                ],
+            ];
             self::enqueue($scripts);
         }
 
@@ -126,10 +126,10 @@ if (!class_exists('Rise_Blocks_Base')):
          * @param string $key
          * @return void
          */
-        protected static function add_font($key){
+        protected static function add_font( $key ){
             $f = self::get_fonts();
-            if (isset($f[$key])) {
-                self::$fonts[$key] = $f[$key];
+            if( isset( $f[ $key ] ) ){
+                self::$fonts[ $key ] = $f[ $key ];
             }
         }
 
@@ -141,8 +141,8 @@ if (!class_exists('Rise_Blocks_Base')):
          * @since 1.0.0
          * @return null
          */
-        protected static function add_styles($style, $device = 'desktop'){
-            self::$styles[$device][] = $style;
+        protected static function add_styles( $style, $device = 'desktop' ){
+            self::$styles[ $device ][] = $style;
         }
 
         /**
@@ -153,7 +153,7 @@ if (!class_exists('Rise_Blocks_Base')):
          * @since 1.0.0
          * @return null
          */
-        protected static function add_scripts($scripts){
+        protected static function add_scripts( $scripts ){
             self::$scripts[] = $scripts;
         }
 
@@ -165,12 +165,12 @@ if (!class_exists('Rise_Blocks_Base')):
          * @since 1.0.0
          * @return null
          */
-        public static function process_css($styles){
+        public static function process_css( $styles ){
 
-            if (count($styles) > 0) {
-                foreach ($styles as $style) {
-                    $wrapper = isset($style['wrapper_selector']) ? $style['wrapper_selector'] : '#';
-                    self::generate_css($style['css'], $style['attrs'], $wrapper);
+            if( count( $styles ) > 0 ){
+                foreach( $styles as $style ){
+                    $wrapper = isset( $style[ 'wrapper_selector' ] ) ? $style[ 'wrapper_selector' ] : '#';
+                    self::generate_css( $style[ 'css' ], $style[ 'attrs' ], $wrapper );
                 }
             }
         }
@@ -184,18 +184,18 @@ if (!class_exists('Rise_Blocks_Base')):
          * @return null
          */
         public static function inline_scripts_styles(){
-            $styles = apply_filters('rise-blocks/styles', self::$styles);
-            $scripts = apply_filters('rise-blocks/scripts', self::$scripts);
+            $styles  = apply_filters( 'rise-blocks/styles', self::$styles );
+            $scripts = apply_filters( 'rise-blocks/scripts', self::$scripts );
             ?>
-            <style type="text/css" media="all" id="<?php echo esc_attr(self::add_prefix('%prefix-block-styles')) ?>">
-                <?php self::process_css($styles['desktop']);?>
+            <style type="text/css" media="all" id="<?php echo esc_attr( self::add_prefix( '%prefix-block-styles' ) ); ?>">
+                <?php self::process_css( $styles[ 'desktop' ] ); ?>
 
                 @media (max-width: 991px) {
-                    <?php self::process_css($styles['tablet']);?>
+                    <?php self::process_css( $styles[ 'tablet' ] ); ?>
                 }
 
                 @media (max-width: 767px) {
-                    <?php self::process_css($styles['mobile']);?>
+                    <?php self::process_css( $styles[ 'mobile' ] ); ?>
                 }
             </style>
             <?php
@@ -206,7 +206,7 @@ if (!class_exists('Rise_Blocks_Base')):
                     jQuery( document ).ready(function(){
                         <?php
                         # https://developer.wordpress.org/apis/security/escaping/#toc_4
-                        foreach ($scripts as $script_escaped) {
+                        foreach( $scripts as $script_escaped ){
                             echo $script_escaped;
                         }
                         ?>
@@ -225,23 +225,24 @@ if (!class_exists('Rise_Blocks_Base')):
      */
     public function register(){
 
-        $param = array();
+        $param = [];
 
-        if (method_exists($this, 'get_attrs')) {
-            $param['render_callback'] = array($this, 'render');
-            $param['attributes'] = $this->get_attrs();
+        if( method_exists( $this, 'get_attrs' ) ){
+            $param[ 'render_callback' ] = [ $this, 'render' ];
+            $param[ 'attributes' ] = $this->get_attrs();
         }
 
-        $name = self::get_block_name($this->slug);
-        $param = apply_filters($name . '_register', $param);
+        $name = self::get_block_name( $this->slug );
+        $param = apply_filters( $name . '_register', $param );
         if( isset( $this->is_pro ) && $this->is_pro ){
             $block_path = Rise_Blocks_Pro_Dir . '/build/blocks/' . $this->slug;
         }else{
             $block_path = Rise_Blocks_Dir . '/build/blocks/' . $this->slug;
         }
+
         register_block_type( $block_path, $param );
 
-        if (method_exists($this, 'register_meta')) {
+        if( method_exists( $this, 'register_meta' ) ){
             $this->register_meta();
         }
     }
@@ -255,12 +256,12 @@ if (!class_exists('Rise_Blocks_Base')):
      */
     protected function get_blocks(){
 
-        if (count(self::$all_blocks) == 0) {
+        if( count( self::$all_blocks ) == 0 ){
             self::set_blocks();
         }
 
-        foreach (self::$all_blocks as $block) {
-            if (self::get_block_name($this->slug) == $block['blockName']) {
+        foreach( self::$all_blocks as $block ){
+            if( self::get_block_name( $this->slug ) == $block[ 'blockName' ] ){
                 $this->blocks[] = $block;
             }
         }
@@ -270,10 +271,10 @@ if (!class_exists('Rise_Blocks_Base')):
 
     public static function set_fse_content(){
 
-        $query = new WP_Query(array(
+        $query = new WP_Query([
             'post_type' => [ 'wp_block', 'wp_template' ],
             'posts_per_page' => -1,
-        ));
+        ]);
 
         if( $query->have_posts() ) {
             while( $query->have_posts() ){
@@ -352,13 +353,13 @@ if (!class_exists('Rise_Blocks_Base')):
                     if( isset( $attrs[ 'enableFullContent' ] ) && $attrs[ 'enableFullContent' ] == 1 ){
 
                         $blog = Rise_Blocks_Blog::get_instance();
-                        $attrs = $blog->get_attrs_with_default($attrs);
+                        $attrs = $blog->get_attrs_with_default( $attrs );
 
-                        $query = $blog->get_query($attrs);
+                        $query = $blog->get_query( $attrs );
 
-                        while ($query->have_posts()) {
+                        while( $query->have_posts() ){
                             $query->the_post();
-                            self::set_blocks(false);
+                            self::set_blocks( false );
                         }
 
                         wp_reset_postdata();
@@ -381,14 +382,14 @@ if (!class_exists('Rise_Blocks_Base')):
      */
     protected function enqueue_block_assets( $scripts, $blocks = false ){
 
-        $scripts = apply_filters(self::get_block_name($this->slug) . '_block_assets', $scripts);
+        $scripts = apply_filters( self::get_block_name( $this->slug ) . '_block_assets', $scripts );
 
-        if (!is_admin()) {
+        if( !is_admin() ){
             $blocks = $this->get_blocks();
         }
 
-        if (is_admin() || count($blocks) > 0) {
-            self::enqueue($scripts);
+        if( is_admin() || count( $blocks ) > 0 ){
+            self::enqueue( $scripts );
         }
     }
 
@@ -399,7 +400,7 @@ if (!class_exists('Rise_Blocks_Base')):
      * @since 1.0.0
      * @return string
      */
-    protected static function get_css_unit($prop){
+    protected static function get_css_unit( $prop ){
         switch ($prop) {
 
             case 'font-size':
@@ -428,11 +429,11 @@ if (!class_exists('Rise_Blocks_Base')):
      * @return array
      */
     public static function get_initial_responsive_props(){
-        return array(
-            'mobile' => array(),
-            'tablet' => array(),
-            'desktop' => array(),
-        );
+        return [
+            'mobile'  => [],
+            'tablet'  => [],
+            'desktop' => [],
+        ];
     }
 
     /**
@@ -442,21 +443,21 @@ if (!class_exists('Rise_Blocks_Base')):
      * @since 1.0.0
      * @return array
      */
-    public static function get_responsive_props($attr, $prop, $devices = false){
+    public static function get_responsive_props( $attr, $prop, $devices = false ){
 
-        $props = $devices ? $devices : array(
-            'mobile' => array(),
-            'tablet' => array(),
-            'desktop' => array(),
-        );
+        $props = $devices ? $devices : [
+            'mobile'  => [],
+            'tablet'  => [],
+            'desktop' => [],
+        ];
 
-        if ($attr) {
-            foreach ($props as $device => $a) {
-                if ($attr['values'] && $attr['values'][$device]) {
-                    $props[$device][$prop] = array(
-                        'unit' => $attr['activeUnit'],
-                        'value' => $attr['values'][$device],
-                    );
+        if( $attr ){
+            foreach( $props as $device => $a ){
+                if( $attr[ 'values' ] && $attr[ 'values' ][ $device ] ){
+                    $props[ $device ][ $prop ] = [
+                        'unit'  => $attr[ 'activeUnit' ],
+                        'value' => $attr[ 'values' ][ $device ],
+                    ];
                 }
             }
         }
@@ -471,64 +472,64 @@ if (!class_exists('Rise_Blocks_Base')):
      * @since 1.0.0
      * @return array
      */
-    public static function get_typography_props($typo, $devices = false){
+    public static function get_typography_props( $typo, $devices = false ){
 
-        $props = $devices ? $devices : array(
-            'mobile' => array(),
-            'tablet' => array(),
-            'desktop' => array(),
-        );
+        $props = $devices ? $devices : [
+            'mobile'  => [],
+            'tablet'  => [],
+            'desktop' => [],
+        ];
 
-        if ($typo) {
+        if( $typo ){
 
-            foreach ($props as $device => $a) {
+            foreach( $props as $device => $a ){
 
-                if (isset($typo['fontSize'])) {
-                    $title_size = $typo['fontSize'];
-                    $props[$device]['font-size'] = array(
-                        'unit' => $title_size['activeUnit'],
-                        'value' => $title_size['values'][$device],
-                    );
+                if( isset( $typo[ 'fontSize' ] ) ){
+                    $title_size = $typo[ 'fontSize' ];
+                    $props[ $device ][ 'font-size' ] = [
+                        'unit'  => $title_size[ 'activeUnit' ],
+                        'value' => $title_size[ 'values' ][ $device ],
+                    ];
                 }
 
-                if (isset($typo['fontWeight'])) {
+                if( isset( $typo[ 'fontWeight' ] ) ){
 
-                    $props[$device]['font-weight'] = array(
-                        'unit' => '',
-                        'value' => $typo['fontWeight'],
-                    );
+                    $props[ $device ][ 'font-weight' ] = [
+                        'unit'  => '',
+                        'value' => $typo[ 'fontWeight' ],
+                    ];
                 }
 
-                if ($device == 'desktop') {
+                if( $device == 'desktop' ){
 
-                    if (isset($typo['fontFamily'])) {
-                        $props[$device]['font-family'] = array(
-                            'unit' => '',
-                            'value' => $typo['fontFamily'],
-                        );
+                    if( isset($typo[ 'fontFamily' ] ) ){
+                        $props[ $device ][ 'font-family' ] = [
+                            'unit'  => '',
+                            'value' => $typo[ 'fontFamily' ],
+                        ];
                     }
 
-                    if (isset($typo['textTransform'])) {
-                        $props[$device]['text-transform'] = array(
-                            'value' => $typo['textTransform'],
-                            'unit' => '',
-                        );
+                    if( isset( $typo[ 'textTransform' ] ) ){
+                        $props[ $device ][ 'text-transform' ] = [
+                            'value' => $typo[ 'textTransform' ],
+                            'unit'  => '',
+                        ];
                     }
                 }
 
-                if (isset($typo['lineHeight'])) {
+                if( isset( $typo[ 'lineHeight' ] ) ){
 
-                    $title_lh = $typo['lineHeight'];
+                    $title_lh = $typo[ 'lineHeight' ];
 
-                    $props[$device]['line-height'] = array(
-                        'unit' => $title_lh['activeUnit'],
-                        'value' => $title_lh['values'][$device],
-                    );
+                    $props[ $device ][ 'line-height' ] = [
+                        'unit'  => $title_lh[ 'activeUnit' ],
+                        'value' => $title_lh[ 'values' ][ $device ],
+                    ];
                 }
             }
         }
 
-        self::add_font($props['desktop']['font-family']['value']);
+        self::add_font( $props[ 'desktop' ][ 'font-family' ][ 'value' ] );
         return $props;
     }
 
@@ -539,46 +540,46 @@ if (!class_exists('Rise_Blocks_Base')):
      * @since 1.0.0
      * @return array
      */
-    public static function get_dimension_props($props, $attr, $devices = ['mobile', 'tablet', 'desktop']){
+    public static function get_dimension_props( $props, $attr, $devices = [ 'mobile', 'tablet', 'desktop' ] ){
 
-        if (!is_array($props)) {
-            switch ($props) {
+        if( !is_array( $props ) ){
+            switch( $props ){
                 case 'margin':
-                $props = array(
+                $props = [
                     'margin-top',
                     'margin-right',
                     'margin-bottom',
                     'margin-left',
-                );
+                ];
                 break;
                 case 'padding':
-                $props = array(
+                $props = [
                     'padding-top',
                     'padding-right',
                     'padding-bottom',
                     'padding-left',
-                );
+                ];
                 break;
                 case 'border-radius':
-                $props = array(
+                $props = [
                     'border-top-left-radius',
                     'border-top-right-radius',
                     'border-bottom-left-radius',
                     'border-bottom-right-radius',
-                );
+                ];
             }
         }
 
         $data = [];
 
-        foreach ($devices as $device) {
-            $data[$device] = array();
-            foreach ($props as $i => $prop) {
-                if (isset($attr['values'][$device])) {
-                    $data[$device][$prop] = array(
-                        'unit' => $attr['activeUnit'],
-                        'value' => $attr['values'][$device][$i],
-                    );
+        foreach( $devices as $device ){
+            $data[ $device ] = [];
+            foreach( $props as $i => $prop ){
+                if( isset( $attr[ 'values' ][ $device ] ) ){
+                    $data[ $device ][ $prop ] = [
+                        'unit'  => $attr[ 'activeUnit' ],
+                        'value' => $attr[ 'values' ][ $device ][ $i ],
+                    ];
                 }
             }
         }
@@ -593,17 +594,17 @@ if (!class_exists('Rise_Blocks_Base')):
      * @since 1.0.0
      * @return array
      */
-    public static function get_dimension_attr($attr, $v = 15, $unit = 'px'){
+    public static function get_dimension_attr( $attr, $v = 15, $unit = 'px' ){
 
-        if (is_null($attr)) {
-            $attr = array(
-                'values' => array(
-                    'desktop' => array($v, $v, $v, $v),
-                    'tablet' => array($v, $v, $v, $v),
-                    'mobile' => array($v, $v, $v, $v),
-                ),
+        if( is_null( $attr ) ){
+            $attr = [
+                'values' => [
+                    'desktop' => [ $v, $v, $v, $v ],
+                    'tablet' => [ $v, $v, $v, $v ],
+                    'mobile' => [ $v, $v, $v, $v ],
+                ],
                 'activeUnit' => $unit,
-            );
+            ];
         }
 
         return $attr;
@@ -616,57 +617,57 @@ if (!class_exists('Rise_Blocks_Base')):
      * @since 1.0.0
      * @return void
      */
-    protected static function generate_css($dynamic_css, $attrs, $wrapper_selector){
+    protected static function generate_css( $dynamic_css, $attrs, $wrapper_selector ){
 
-        if (count($dynamic_css) <= 0) {
+        if( count( $dynamic_css ) <= 0 ){
             return;
         }
 
-        foreach ($dynamic_css as $css) {
+        foreach( $dynamic_css as $css ){
 
             $p = '';
-            foreach ($css['props'] as $prop => $setting) {
+            foreach( $css[ 'props' ] as $prop => $setting ){
 
                 $unit = null;
-                if (is_array($setting)) {
-                    $value = isset($setting['value']) ? $setting['value'] : '';
-                    $unit = isset($setting['unit']) ? $setting['unit'] : '';
+                if( is_array( $setting ) ){
+                    $value = isset( $setting[ 'value' ] ) ? $setting[ 'value' ] : '';
+                    $unit  = isset( $setting[ 'unit' ] ) ? $setting[ 'unit' ] : '';
 
-                } else {
-                    $value = isset($attrs[$setting]) ? esc_attr($attrs[$setting]) : '';
+                } else{
+                    $value = isset( $attrs[ $setting ] ) ? esc_attr( $attrs[ $setting ] ) : '';
                 }
 
-                if (0 === $value || !empty($value)) {
-                    $unit = isset($unit) ? $unit : self::get_css_unit($prop);
+                if( 0 === $value || !empty( $value ) ){
+                    $unit = isset( $unit ) ? $unit : self::get_css_unit( $prop );
                     $p .= $prop . ': ' . $value . $unit . ';';
                 }
             }
-            if (!empty($p)) {
+            if( !empty( $p ) ){
                 $selector = '';
 
-                if (isset($css['selector'])) {
-                    if (is_array($css['selector'])) {
+                if( isset( $css[ 'selector' ] ) ){
+                    if( is_array( $css[ 'selector' ] ) ){
 
-                        foreach ($css['selector'] as $s) {
-                            $glue = substr($s, 0, 1) == ':' ? '' : ' ';
-                            $selector .= $wrapper_selector . $attrs['block_id'] . $glue . $s . ',';
+                        foreach( $css[ 'selector' ] as $s ){
+                            $glue = substr( $s, 0, 1 ) == ':' ? '' : ' ';
+                            $selector .= $wrapper_selector . $attrs[ 'block_id' ] . $glue . $s . ',';
                         }
 
-                        $selector = rtrim($selector, ',');
+                        $selector = rtrim( $selector, ',' );
                     } else {
 
-                        $selector = $wrapper_selector . $attrs['block_id'];
-                        if (substr($css['selector'], 0, 1) == ':') {
-                            $selector .= $css['selector'];
+                        $selector = $wrapper_selector . $attrs[ 'block_id' ];
+                        if( substr( $css[ 'selector' ], 0, 1 ) == ':' ){
+                            $selector .= $css[ 'selector' ];
                         } else {
-                            $selector .= ' ' . $css['selector'];
+                            $selector .= ' ' . $css[ 'selector' ];
                         }
                     }
                 } else {
-                    $selector = $wrapper_selector . $attrs['block_id'];
+                    $selector = $wrapper_selector . $attrs[ 'block_id' ];
                 }
 
-                $selector_escaped = self::add_prefix($selector);
+                $selector_escaped = self::add_prefix( $selector );
                 $selector_escaped .= '{' . $p . '}';
                 echo $selector_escaped;
 
@@ -681,25 +682,24 @@ if (!class_exists('Rise_Blocks_Base')):
      * @since 1.0.0
      * @return array
      */
-    protected function get_attrs_with_default($attrs){
+    protected function get_attrs_with_default ($attrs ){
 
-        $return = array();
-        $def = array();
-        if (method_exists($this, 'get_attrs')) {
+        $def = $return = [];
+        if( method_exists( $this, 'get_attrs' ) ){
             $def = $this->get_attrs();
         } else {
             return $attrs;
         }
 
-        foreach ($def as $key => $val) {
+        foreach( $def as $key => $val ){
 
-            if (isset($attrs[$key])) {
-                $return[$key] = $attrs[$key];
-            } else {
-                if (isset($def[$key]['default'])) {
-                    $return[$key] = $def[$key]['default'];
+            if( isset( $attrs[ $key ] ) ){
+                $return[ $key ] = $attrs[ $key ];
+            }else{
+                if( isset( $def[ $key ][ 'default' ] ) ){
+                    $return[ $key ] = $def[ $key ][ 'default' ];
                 } else {
-                    $return[$key] = false;
+                    $return[ $key ] = false;
                 }
             }
         }

@@ -1,10 +1,10 @@
 === Rise Blocks - A Complete Gutenberg Page Builder ===
-Contributors: risethemes, uzess, pradip56, bhuwanroka
+Contributors: risethemes, uzess, bhuwanroka
 Tags: gutenberg, blocks, gutenberg blocks, editor, fse
 Requires at least: 4.7
 Requires PHP: 5.6
 Tested up to: 6.7
-Stable tag: 3.6
+Stable tag: 3.7
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -294,3 +294,6 @@ Definitely Not. As we have developed Rise Block focusing on lightweights, and cl
 * Icon list/Advance Button block aligment issue fixed
 * Blog/Counter block item per row issue fixed
 * Image Slider block image issue fixed
+
+== 3.7 ==
+* Fix security issue

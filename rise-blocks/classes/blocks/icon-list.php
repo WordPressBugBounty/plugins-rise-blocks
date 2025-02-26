@@ -72,7 +72,7 @@ if( !class_exists( 'Rise_Blocks_Icon_List' ) ){
 		* @since 1.0.0
 		* @var array
 		*/
-		protected $blocks = array();
+		protected $blocks = [];
 
 		/**
 		* The object instance.
@@ -123,57 +123,56 @@ if( !class_exists( 'Rise_Blocks_Icon_List' ) ){
 				$box_padding = self::get_dimension_props( 'padding', $attrs[ 'iconListPadding' ] );
 				$heading_padding = self::get_dimension_props( 'padding', $attrs[ 'headingPadding' ] );
 
-
 				foreach( self::$devices as $device ){
 
-					$css = array(
-						array(
+					$css = [
+						[
 							'selector' => self::add_prefix( '.%prefix-icon-list .%prefix-content .%prefix-title' ),
 							'props'    => array_merge( $title_typo[ $device ], $heading_padding[ $device ] )
-						),
-						array(
+						],
+						[
 							'selector' => self::add_prefix( '.%prefix-icon-list' ),
 							'props'    => $box_padding[ $device ]
-						),
-						array(
+						],
+						[
 							'selector' => self::add_prefix( '.%prefix-icon-list .%prefix-icon-wrapper .%prefix-icon' ),
 							'props'    => $icon_size[ $device ]
-						)
-					);
+						]
+					];
 					
-					self::add_styles( array(
+					self::add_styles([
 						'attrs' => $attrs,
 						'css'   => $css,
-					), $device );
+					], $device );
 				}
 
-				$dynamic_css = array(
-					array(
+				$dynamic_css = [
+					[
 						'selector' => self::add_prefix( '.%prefix-icon-list .%prefix-content .%prefix-title' ),
-						'props' => array(
+						'props' => [
 							'color' => 'titleColor'
-						)
-					),
-				);
+						]
+					],
+				];
 
 				$icon_props = [];
-				if( isset($attrs['iconColors'])){
-					if(isset($attrs['iconColors'])){
-						$icon_props['color'] = array( 'value'=> $attrs['iconColors']);
+				if( isset( $attrs[ 'iconColors' ] ) ){
+					if(isset( $attrs[ 'iconColors' ] ) ){
+						$icon_props[ 'color' ] = [ 'value'=> $attrs[ 'iconColors' ] ];
 					}
 				}
 								
 				if( isset( $icon_props) ){		
-					$dynamic_css[] = array(
+					$dynamic_css[] = [
 						'selector' => self::add_prefix( '.%prefix-icon-list .%prefix-icon-wrapper .%prefix-icon' ),
 						'props' => $icon_props
-					);
+					];
 				}
 
-				self::add_styles( array(
+				self::add_styles([
 					'attrs' => $attrs,
 					'css'   => $dynamic_css,
-				));
+				]);
 			}
 
 		}

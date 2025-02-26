@@ -126,72 +126,72 @@ if( !class_exists( 'Rise_Blocks_Blog' ) ){
 				# Typography for title, content on mobile
 				$title_typo = self::get_initial_responsive_props();
 				if( isset( $attrs[ 'titleTypo' ] ) ){
-					$title_typo = self::get_typography_props(  $attrs[ 'titleTypo' ] );
+					$title_typo = self::get_typography_props( $attrs[ 'titleTypo' ] );
 				}
 
 				$content_typo = self::get_initial_responsive_props();
 				if( isset( $attrs[ 'contentTypo' ] ) ){	
-					$content_typo = self::get_typography_props(  $attrs[ 'contentTypo' ] );
+					$content_typo = self::get_typography_props( $attrs[ 'contentTypo' ] );
 				}
 
 				$meta_typo = self::get_initial_responsive_props();
 				if( isset( $attrs[ 'metaTypo' ] ) ){	
-					$meta_typo = self::get_typography_props(  $attrs[ 'metaTypo' ] );
+					$meta_typo = self::get_typography_props( $attrs[ 'metaTypo' ] );
 				}
 
 				foreach( [ 'mobile', 'tablet', 'desktop' ] as $device ){
-					$css = array(
-						array(
+					$css = [
+						[
 							'selector' => self::add_prefix( '.%prefix-blog-post-title' ),
 							'props'    => $title_typo[ $device ]
-						),
-						array(
+						],
+						[
 							'selector' => '.meta-content',
 							'props'    => $meta_typo[ $device ]
-						),
-						array(
+						],
+						[
 							'selector' => self::add_prefix( '.%prefix-blog-post-content p' ),
 							'props'    => $content_typo[ $device ]
-						),
-					);
+						],
+					];
 
-					self::add_styles( array(
+					self::add_styles([
 						'attrs' => $attrs,
 						'css'   => $css,
-					), $device );
+					], $device );
 				}
 
-				$dynamic_css = array(
-					array(
+				$dynamic_css = [
+					[
 						'selector' => self::add_prefix( '.%prefix-blog-meta-wrapper a' ),
-						'props' => array(
+						'props' => [
 							'color' => 'metaColor'
-						)
-					),
-					array(
+						]
+					],
+					[
 						'selector' => self::add_prefix( '.%prefix-blog-post-title a' ),
-						'props'    =>  array(
+						'props'    =>  [
 							'color' => 'titleColor'
-						)
-					),
-					array(
+						]
+					],
+					[
 						'selector' => self::add_prefix( '.%prefix-blog-post-title:hover a' ),
-						'props'    => array(
+						'props'    => [
 							'color' => 'titleHoverColor'
-						)
-					),
-					array(
+						]
+					],
+					[
 						'selector' => self::add_prefix( '.%prefix-blog-post-content p' ),
-						'props'    => array(
+						'props'    => [
 							'color' => 'contentColor'
-						)
-					)
-				);
+						]
+					]
+				];
 
-				self::add_styles( array(
+				self::add_styles([
 					'attrs' => $attrs,
 					'css'   => $dynamic_css,
-				));
+				]);
 			}
 		}
 
@@ -203,38 +203,37 @@ if( !class_exists( 'Rise_Blocks_Blog' ) ){
 		* @return array
 		*/
 		protected function get_attrs(){
-			return array(
+			return [
 
 				# Hidden setting
-				'block_id' => array(
+				'block_id' => [
 					'type' => 'string',
-				),
-				'alignment' => array( 
+				],
+				'alignment' => [ 
 					'type' => 'string',
 					'default' => 'left'
-				),
+				],
 				# Post Setting
-				'postsToShow'     => array(
+				'postsToShow' => [
 					'type'    => 'number',
 					'default' => 5,
-				),
-				'perRow' =>  array(
+				],
+				'perRow' => [
 					'type' => 'number',
 					'default' => 2
-				),
-				'order'           => array(
+				],
+				'order' => [
 					'type'    => 'string',
 					'default' => 'desc',
-				),
-				'orderBy'         => array(
+				],
+				'orderBy' => [
 					'type'    => 'string',
 					'default' => 'date',
-				),
-				'categories' => array(
+				],
+				'categories' => [
 					'type' => 'string',
-				),
-
-				'titleTypo' => array(
+				],
+				'titleTypo' => [
 					'type' => 'object',
 					'default' => array(
 						'fontFamily' => 'Lato',
@@ -258,8 +257,8 @@ if( !class_exists( 'Rise_Blocks_Blog' ) ){
 							)
 						)
 					)
-				),
-				'contentTypo' => array(
+				],
+				'contentTypo' => [
 					'type' => 'object',
 					'default' => array(
 						'fontFamily' => 'Lato',
@@ -283,8 +282,8 @@ if( !class_exists( 'Rise_Blocks_Blog' ) ){
 							)
 						)
 					)
-				),
-				'metaTypo' => array(
+				],
+				'metaTypo' => [
 					'type' => 'object',
 					'default' => array(
 						'fontFamily' => 'Lato',
@@ -308,59 +307,57 @@ if( !class_exists( 'Rise_Blocks_Blog' ) ){
 							)
 						)
 					)
-				),
-
-				'enableTitle' => array(
+				],
+				'enableTitle' => [
 					'type' => 'boolean',
 					'default' => true
-				),
-				'enableContent' => array(
+				],
+				'enableContent' => [
 					'type' => 'boolean', 
 					'default' => true
-				),
-				'enableFullContent' => array(
+				],
+				'enableFullContent' => [
 					'type' => 'boolean', 
 					'default' => false
-				),
-				'enableCategory' => array(
+				],
+				'enableCategory' => [
 					'type' => 'boolean',
 					'default' => true
-				),
-				'enableAuthor' => array(
+				],
+				'enableAuthor' => [
 					'type' => 'boolean',
 					'default' => true
-				),
-				'enableDate' => array(
+				],
+				'enableDate' => [
 					'type' => 'boolean',
 					'default' => true
-				),
-				'enableImage' => array(
+				],
+				'enableImage' => [
 					'type' => 'boolean',
 					'default' => true
-				),
-				'imageSize' => array(
+				],
+				'imageSize' => [
 					'type' => 'string',
 					'default' => 'full'
-				),
-
-				'titleColor' => array(
+				],
+				'titleColor' => [
 					'type' => 'string',
-				),
-				'titleHoverColor' => array(
+				],
+				'titleHoverColor' => [
 					'type' => 'string',
-				),
-				'contentColor' => array(
+				],
+				'contentColor' => [
 					'type' => 'string',
-				),
-				'metaColor' => array(
+				],
+				'metaColor' => [
 					'type' => 'string',
-				),
-				'excerptLength' => array(
+				],
+				'excerptLength' => [
 					'type' => 'number',
 					'default' => 20
-				),
+				],
 
-			);
+			];
 		}
 
 	   /**
@@ -397,7 +394,7 @@ if( !class_exists( 'Rise_Blocks_Blog' ) ){
 				$args[ 'cat' ] = $attrs[ 'categories' ];
 			}
 			
-			$query = new WP_Query( apply_filters( self::add_prefix('%prefix_blog_query'), $args ) );
+			$query = new WP_Query( apply_filters( self::add_prefix( '%prefix_blog_query' ), $args ) );
 
 			return $query;
 		}

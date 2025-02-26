@@ -371,12 +371,18 @@ if( !class_exists( 'Rise_Blocks_Section_Identity' ) ){
 					<?php endif; ?>
 
 					<?php 
+						$tags = [ 'h1', 'div', 'p' ];
+
+						$tag = in_array( $attrs[ 'titleTag' ], $tags ) ? $attrs[ 'titleTag' ] : 'div';
+
 						if( $attrs[ 'enableSiteTitle' ] == 1 ){
-							echo '<'. esc_attr( $attrs[ 'titleTag' ] ) . ' class="rise-blocks-site-title"><a href="'. home_url( '/' ). '">' . get_bloginfo( 'name', 'display' ) . '</a></'. esc_attr( $attrs[ 'titleTag' ] ) .'>';
+							echo '<'. esc_attr( $tag ) . ' class="rise-blocks-site-title"><a href="'. home_url( '/' ). '">' . get_bloginfo( 'name', 'display' ) . '</a></'. esc_attr( $tag ) .'>';
 						}
 
+						$tag = in_array( $attrs[ 'taglineTag' ], $tags ) ? $attrs[ 'taglineTag' ] : 'p';
+
 						if( $attrs[ 'enableTagline' ] == 1 ){
-							echo '<'. esc_attr( $attrs[ 'taglineTag' ] ) .' class="rise-blocks-site-description">' . get_bloginfo( 'description', 'display' ) . '</' . esc_attr( $attrs[ 'taglineTag' ] ) . '>';
+							echo '<'. esc_attr( $tag ) .' class="rise-blocks-site-description">' . get_bloginfo( 'description', 'display' ) . '</' . esc_attr( $tag ) . '>';
 						}
 					?>
 				</div>

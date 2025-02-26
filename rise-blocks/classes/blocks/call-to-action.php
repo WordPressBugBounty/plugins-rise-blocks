@@ -67,7 +67,7 @@ if( !class_exists( 'Rise_Blocks_Call_To_Action' ) ){
 		* @since 1.0.0
 		* @var array
 		*/
-		protected $blocks = array();
+		protected $blocks = [];
 
 		/**
 		* The object instance.
@@ -166,102 +166,102 @@ if( !class_exists( 'Rise_Blocks_Call_To_Action' ) ){
 					$container_width = self::get_responsive_props( $attrs[ 'containerWidth' ], 'max-width' );
 				}
 				
-				$devices = array( 'mobile', 'tablet', 'desktop' );
+				$devices = [ 'mobile', 'tablet', 'desktop' ];
 				foreach( $devices as $device ){
 
-					$css = array(
-						array(
+					$css = [
+						[
 							'props' => $padding[ $device ]
-						),
-						array(
+						],
+						[
 							'selector' => self::add_prefix( '.%prefix-cta-title-wrapper' ),
 							'props'    => $title_padding[ $device ]
-						),
-                        array(
+						],
+                        [
 							'selector' => self::add_prefix( '.%prefix-cta-title' ),
 							'props'    => $title_typo[ $device ]
-						),
-						array(
+						],
+						[
 							'selector' => self::add_prefix( '.%prefix-cta-btn' ),
 							'props'    => array_merge( $button_typo[ $device ], $button_padding[ $device ] )
-						),
-						array(
+						],
+						[
 							'selector' => self::add_prefix( '.%prefix-cta-content' ),
 							'props'    => $container_width[ $device ]
-						)
-					);
+						]
+					];
 
-					self::add_styles( array(
+					self::add_styles([
 						'attrs' => $attrs,
 						'css'   => $css,
-					), $device );
+					], $device );
 				}
 
-				$button_props =	array_merge( $border_radius[ 'desktop' ], array(
+				$button_props =	array_merge( $border_radius[ 'desktop' ], [
 					'color'      => 'buttonTextColor',
 					'background' => 'buttonBackground',
-				));
+				]);
 
-				$background = array();
+				$background = [];
 				if( !isset( $attrs[ 'bgType' ] ) && isset( $attrs[ 'sectionBgImage' ] ) && $attrs[ 'sectionBgImage' ][ 'url' ] != ''  ){
 					# bgType is image when not set
-					$background = array(
-						array(
-							'props' => array(
+					$background = [
+						[
+							'props' => [
 								'background-position' => 'sectionBgPosition',
-								'background-attachment' => array(
+								'background-attachment' => [
 									'unit'  => '',
 									'value' => isset( $attrs[ 'sectionBgAttachment' ] ) ? 'fixed' : ''
-								),
-								'background-image' => array(
+								],
+								'background-image' => [
 									'unit'  => '',
 									'value' =>  'url(' . $attrs[ 'sectionBgImage' ][ 'url' ] . ')'
-								)
-							)
-						));
+								]
+							]
+						]
+					];
 				}
 
-				$dynamic_css = array(
-					array(
+				$dynamic_css = [
+					[
 						'selector' => self::add_prefix( '.%prefix-cta-overlay' ),
-						'props' => array(
+						'props' => [
 							'background-color' => ( isset( $attrs[ 'bgType' ] ) && $attrs[ 'bgType' ] == 'color' ) ? 'bgColor' : 'sectionOverlay',
-						)
-					),
-					array(
+						]
+					],
+					[
 						'selector' => self::add_prefix( '.%prefix-cta-title' ),
-						'props' => array(
+						'props' => [
 							'color' => 'titleColor'
-						)
-					),
-					array(
+						]
+					],
+					[
 						'selector' => self::add_prefix( '.%prefix-cta-btn' ),
 						'props' => $button_props
-					),
-					array(
+					],
+					[
 						'selector' => self::add_prefix( '.%prefix-cta-btn:hover' ),
-						'props' => array(
+						'props' => [
 							'color'      => 'buttonHoverTextColor',
-							'background' => array(
+							'background' => [
 								'unit' => '',
 								'value' => isset( $attrs[ 'buttonHoverBackground' ] ) ? $attrs[ 'buttonHoverBackground'] : '#000'
-							),
-						)
-					),
-					array(
+							],
+						]
+					],
+					[
 						'selector' => self::add_prefix( '.%prefix-cta-title-line' ),
-						'props' => array(
+						'props' => [
 							'background' => 'lineColor'
-						)
-					)
-				);
+						]
+					]
+				];
 
-				self::add_styles( array(
+				self::add_styles([
 					'attrs' => $attrs,
 					'css'   => array_merge( $dynamic_css, $background ),
-				));
+				]);
 			}
-
 		}
 	}
 }

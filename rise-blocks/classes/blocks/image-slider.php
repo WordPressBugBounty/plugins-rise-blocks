@@ -67,7 +67,7 @@ if (!class_exists('Rise_Blocks_Image_Slider')) {
          * @since 1.0.0
          * @var array
          */
-        protected $blocks = array();
+        protected $blocks = [];
 
         /**
          * The object instance.
@@ -102,9 +102,8 @@ if (!class_exists('Rise_Blocks_Image_Slider')) {
          * @since 1.0.0
          * @return object
          */
-        public static function get_instance()
-        {
-            if (!self::$instance) {
+        public static function get_instance(){
+            if( !self::$instance ){
                 self::$instance = new self();
             }
             return self::$instance;
@@ -118,25 +117,24 @@ if (!class_exists('Rise_Blocks_Image_Slider')) {
          * @since 1.0.0
          * @return null
          */
-        public function enqueue_scripts_styles()
-        {
+        public function enqueue_scripts_styles(){
             $this->get_blocks();
-            if (count($this->blocks) > 0) {
-                $scripts = array(
-                    array(
+            if( count( $this->blocks ) > 0 ){
+                $scripts = [
+                    [
                         'handler' => 'slick',
                         'script' => 'vendors/slick/slick.js',
                         'version' => '1.8.1',
-                        'dependency' => array('jquery'),
-                    ),
-                    array(
+                        'dependency' => [ 'jquery' ],
+                    ],
+                    [
                         'handler' => 'slick',
                         'style' => 'vendors/slick/slick.css',
                         'version' => '1.8.1',
-                    ),
-                );
-                $scripts = apply_filters(self::get_block_name($this->slug) . '_frontend_assets', $scripts, $this);
-                self::enqueue($scripts);
+                    ],
+                ];
+                $scripts = apply_filters( self::get_block_name( $this->slug ) . '_frontend_assets', $scripts, $this );
+                self::enqueue( $scripts );
             }
         }
 
@@ -147,45 +145,44 @@ if (!class_exists('Rise_Blocks_Image_Slider')) {
          * @since 1.0.0
          * @return null
          */
-        public function prepare_scripts_styles()
-        {
-            foreach ($this->blocks as $block) {
+        public function prepare_scripts_styles(){
+            foreach( $this->blocks as $block ){
 
-                $attrs = self::get_attrs_with_default($block['attrs']);
+                $attrs = self::get_attrs_with_default( $block[ 'attrs' ] );
 
                 $height = self::get_initial_responsive_props();
-                if (isset($attrs['height'])) {
-                    $height = self::get_responsive_props($attrs['height'], 'height');
+                if( isset( $attrs[ 'height' ] ) ){
+                    $height = self::get_responsive_props( $attrs[ 'height' ], 'height' );
                 }
 
-                foreach (['mobile', 'tablet', 'desktop'] as $device) {
-                    $css = array(
-                        array(
+                foreach( [ 'mobile', 'tablet', 'desktop' ] as $device ){
+                    $css = [
+                        [
                             'selector' => '.slick-slide .image-slider',
-                            'props' => $height[$device],
-                        ),
-                    );
+                            'props' => $height[ $device ],
+                        ],
+                    ];
 
-                    self::add_styles(array(
+                    self::add_styles([
                         'attrs' => $attrs,
-                        'css' => $css,
-                    ), $device);
+                        'css'   => $css,
+                    ], $device);
                 }
 
-                $slidesToShow = $attrs['slideToShow']['values']['desktop'];
+                $slidesToShow = $attrs[ 'slideToShow' ][ 'values' ][ 'desktop' ];
 
-                if( count( $attrs['image'] ) < $slidesToShow ){
-                    $slidesToShow = count( $attrs['image'] );
+                if( is_array( $attrs[ 'image' ] ) &&  count( $attrs[ 'image' ] ) < $slidesToShow ){
+                    $slidesToShow = count( $attrs[ 'image' ] );
                 }
 
-                $slideToScroll = $attrs['slideToScroll'];
+                $slideToScroll = $attrs[ 'slideToScroll' ];
                 ob_start();
                 ?>
 
 				var riseBlocksNewsArgs = {
-					slidesToShow: <?php echo esc_attr($slidesToShow); ?>,
+					slidesToShow: <?php echo absint( $slidesToShow ); ?>,
 					slidesToScroll: 1,
-					autoplay: <?php echo $attrs['enableAutoPlay'] == true ? 'true' : 'false'; ?>,
+					autoplay: <?php echo $attrs[ 'enableAutoPlay' ] == true ? 'true' : 'false'; ?>,
 					infinite: true,  
 					arrows: <?php echo $attrs['enableArrows'] == true ? 'true' : 'false'; ?>,
 					dots: <?php echo $attrs['enableDots'] == true ? 'true' : 'false'; ?>,
@@ -292,7 +289,7 @@ if (!class_exists('Rise_Blocks_Image_Slider')) {
 
             ?>
 			<div id="<?php echo esc_attr($attrs['block_id']); ?>" class="rise-blocks-image-slider">
-				<?php if (is_array($attrs['image'])): ?>
+				<?php if ( isset( $attrs['image'] ) && is_array($attrs['image'])): ?>
 					<?php foreach ($attrs['image'] as $image): ?>
 						<div class="rise-blocks-image-slider-init">
 							<?php

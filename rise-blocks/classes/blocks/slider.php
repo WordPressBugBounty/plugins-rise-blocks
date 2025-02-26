@@ -603,7 +603,7 @@ $js = ob_get_clean();
 								<?php while ($query->have_posts()): ?>
 									<?php $query->the_post();?>
 									<?php
-    $image = false;
+                $image = false;
                 if (has_post_thumbnail()) {
                     $image = get_the_post_thumbnail_url(get_the_ID(), 'full');
                 }
@@ -661,7 +661,7 @@ $js = ob_get_clean();
 					</div>
 				</section>
 				<?php
-wp_reset_postdata();
+            wp_reset_postdata();
             $block_content = ob_get_clean();
             endif;
 

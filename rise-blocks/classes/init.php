@@ -88,18 +88,16 @@ if (!class_exists('Rise_Blocks_Init')) {
             return $data;
         }
 
-        public static function show_menu_in_rest($args, $name, $object)
-        {
+        public static function show_menu_in_rest( $args, $name, $object ){
 
-            if ('nav_menu' == $name) {
-                $args['show_in_rest'] = true;
+            if( 'nav_menu' == $name ){
+                $args[ 'show_in_rest' ] = true;
             }
 
             return $args;
         }
 
-        public static function override_header()
-        {
+        public static function override_header(){
 
             $header = get_theme_mod('rise-blocks-header', false);
             if (!$header) {
@@ -118,8 +116,7 @@ if (!class_exists('Rise_Blocks_Init')) {
             ob_get_clean();
         }
 
-        public static function override_footer()
-        {
+        public static function override_footer(){
 
             $footer = get_theme_mod('rise-blocks-footer', false);
             if (!$footer) {
@@ -306,8 +303,7 @@ if (!class_exists('Rise_Blocks_Init')) {
          * @return array
          * @since 1.0.0
          */
-        public static function register_category($categories, $post)
-        {
+        public static function register_category($categories, $post){
             return array_merge($categories, array(
                 array(
                     'slug' => self::get_prefix(),

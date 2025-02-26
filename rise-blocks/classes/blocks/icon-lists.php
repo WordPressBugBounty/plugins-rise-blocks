@@ -61,7 +61,7 @@ if( !class_exists( 'Rise_Blocks_Icon_Lists' ) ){
 		* @since 1.0.0
 		* @var array
 		*/
-		protected $blocks = array();
+		protected $blocks = [];
 
 		/**
 		* The object instance.
@@ -96,7 +96,7 @@ if( !class_exists( 'Rise_Blocks_Icon_Lists' ) ){
 		* @return object
 		*/
 		public static function get_instance(){
-			if ( ! self::$instance ) {
+			if( ! self::$instance ){
 				self::$instance = new self();
 			}
 			return self::$instance;
@@ -117,19 +117,19 @@ if( !class_exists( 'Rise_Blocks_Icon_Lists' ) ){
 				
                 $attrs = $block[ 'attrs' ];
 				
-				$dynamic_css = array(
-					array(
+				$dynamic_css = [
+					[
 						'selector' => '',
-						'props' => array(
+						'props' => [
 							'background-color' => 'boxBackgroundColor'
-						)
-					),
-				);
+						]
+					],
+				];
 
-				self::add_styles( array(
+				self::add_styles([
 					'attrs' => $attrs,
 					'css'   => $dynamic_css,
-				));
+				]);
 			}
 		}
 	}

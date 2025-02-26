@@ -62,7 +62,7 @@ if( !class_exists( 'Rise_Blocks_News_2' ) ){
 		* @since 1.0.0
 		* @var array
 		*/
-		protected $blocks = array();
+		protected $blocks = [];
 
 		/**
 		* The object instance.
@@ -115,19 +115,19 @@ if( !class_exists( 'Rise_Blocks_News_2' ) ){
 
 			$this->get_blocks();
 			if( count( $this->blocks ) > 0 ){
-				$scripts = array(
-					array(
+				$scripts = [
+					[
 						'handler' => 'slick',
 						'script'  => 'vendors/slick/slick.js',
 						'version' => '1.8.1',
-						'dependency' => array( 'jquery' )
-					),
-					array(
+						'dependency' => [ 'jquery' ]
+					],
+					[
 						'handler' => 'slick',
 						'style' => 'vendors/slick/slick.css',
 						'version' => '1.8.1',
-					)
-				);
+					]
+				];
 				$scripts = apply_filters( self::get_block_name( $this->slug ) . '_frontend_assets', $scripts, $this );
 				self::enqueue( $scripts );
 			}
@@ -170,108 +170,108 @@ if( !class_exists( 'Rise_Blocks_News_2' ) ){
 				$padding = self::get_dimension_props( 'padding', $attrs[ 'padding' ] );
 
 				foreach( [ 'mobile', 'tablet', 'desktop' ] as $device ){
-					$css = array(
-						array(
+					$css = [
+						[
 							'selector' => self::add_prefix( '.%prefix-news-2-title' ),
 							'props'    => $heading_typo[ $device ]
-						),
-						array(
+						],
+						[
 							'selector' => self::add_prefix( '.%prefix-news-2-post-title a' ),
 							'props'    => $title_typo[ $device ]
-						),
-						array(
+						],
+						[
 							'selector' => '.meta-content a',
 							'props'    => $meta_typo[ $device ]
-						),
-						array(
+						],
+						[
 							'selector' => self::add_prefix( '.%prefix-news-2-post-content' ),
 							'props'    => $content_typo[ $device ]
-						),
-						array(
+						],
+						[
 							'selector' => '',
 							'props' => $padding[ $device ],
-						)
-					);
+						]
+					];
 
-					self::add_styles( array(
+					self::add_styles([
 						'attrs' => $attrs,
 						'css'   => $css,
-					), $device );
+					], $device );
 				}
 
-				$dynamic_css = array(
-					array(
+				$dynamic_css = [
+					[
 						'selector' => self::add_prefix( '.%prefix-news-2-meta-wrapper a' ),
-						'props' => array(
+						'props' => [
 							'color' => 'color'
-						)
-					),
-					array(
+						]
+					],
+					[
 						'selector' => self::add_prefix( '.%prefix-news-2-post-title a' ),
-						'props'    =>  array(
+						'props'    =>  [
 							'color' => 'color'
-						)
-					),
-					array(
+						]
+					],
+					[
 						'selector' => self::add_prefix( '.%prefix-news-2-title' ),
-						'props'    =>  array(
+						'props'    =>  [
 							'color' => 'color'
-						)
-					),
-					array(
+						]
+					],
+					[
 						'selector' => self::add_prefix( '.%prefix-news-2-post-title:hover a' ),
-						'props'    => array(
+						'props'    => [
 							'color' => 'color'
-						)
-					),
-					array(
+						]
+					],
+					[
 						'selector' => self::add_prefix( '.%prefix-news-2-post-title:hover a' ),
-						'props'    => array(
+						'props'    => [
 							'color' => 'color'
-						)
-					),
-					array(
+						]
+					],
+					[
 						'selector' => self::add_prefix( '.%prefix-news-2-post-content' ),
-						'props'    => array(
+						'props'    => [
 							'color' => 'color'
-						)
-					),
-					array(
+						]
+					],
+					[
 						'selector' => self::add_prefix( '.meta-content a' ),
-						'props'    => array(
+						'props'    => [
 							'color' => 'color'
-						)
-					),
-					array(
+						]
+					],
+					[
 						'selector' => self::add_prefix( '.meta-content .line' ),
-						'props'    => array(
+						'props'    => [
 							'background-color' => 'color'
-						)
-					),
-					array(
+						]
+					],
+					[
 						'selector' => '',
-						'props'    => array(
+						'props'    => [
 							'background-color' => 'bgColor'
-						)
-					),
-					array(
+						]
+					],
+					[
 						'selector' => self::add_prefix( '.%prefix-slider-arrow' ),
-						'props'    => array(
+						'props'    => [
 							'background-color' => 'arrowBgColor'
-						)
-					),
-					array(
+						]
+					],
+					[
 						'selector' => self::add_prefix( '.%prefix-slider-arrow' ),
-						'props'    => array(
+						'props'    => [
 							'color' => 'arrowColor'
-						)
-					)
-				);
+						]
+					]
+				];
 
-				self::add_styles( array(
+				self::add_styles([
 					'attrs' => $attrs,
 					'css'   => $dynamic_css,
-				));
+				]);
 
 				$query = $this->get_query( $attrs );
 				$slidesToShow = $query->post_count > $attrs[ 'slidesToShow' ] ? $attrs[ 'slidesToShow' ] : $query->post_count;
@@ -312,204 +312,204 @@ if( !class_exists( 'Rise_Blocks_News_2' ) ){
 		* @return array
 		*/
 		protected function get_attrs(){
-			return array(
+			return [
 
 				# Hidden setting
-				'block_id' => array(
+				'block_id' => [
 					'type' => 'string',
-				),
-				'title' => array(
+				],
+				'title' => [
 					'type' => 'string',
 					'default' => 'Carousel Post'
- 				),
-				'alignment' => array( 
+ 				],
+				'alignment' => [ 
 					'type' => 'string',
 					'default' => 'center'
-				),
+				],
 				# Post Setting
-				'postsToShow'     => array(
+				'postsToShow' => [
 					'type'    => 'number',
 					'default' => 5,
-				),
-				'order'           => array(
+				],
+				'order' => [
 					'type'    => 'string',
 					'default' => 'desc',
-				),
-				'orderBy'         => array(
+				],
+				'orderBy'         => [
 					'type'    => 'string',
 					'default' => 'date',
-				),
-				'categories' => array(
+				],
+				'categories' => [
 					'type' => 'string',
-				),
-				'headingTypo' => array(
+				],
+				'headingTypo' => [
 					'type' => 'object',
-					'default' => array(
+					'default' => [
 						'fontFamily' => 'Roboto',
-						'fontSize'   => array(
-							'units' => array( 'px', 'em', 'rem' ),
+						'fontSize'   => [
+							'units' => [ 'px', 'em', 'rem' ],
 							'activeUnit' => 'px',
-							'values' => array(
+							'values' => [
 								'desktop' => 20,
 								'tablet'  => 20,
 								'mobile'  => 20
-							)
-						),
+							]
+						],
 						'textTransform' => 'uppercase',
 						'fontWeight' => 700,
-						'lineHeight' => array(
+						'lineHeight' => [
 							'activeUnit' => '',
-							'units'      => array( '' ),
-							'values'     => array(
+							'units'      => [ '' ],
+							'values'     => [
 								'desktop' => '1.2',
 								'tablet'  => '1.2',
 								'mobile'  => '1.2'
-							)
-						)
-					)
-				),
+							]
+						]
+					]
+				],
 
-				'titleTypo' => array(
+				'titleTypo' => [
 					'type' => 'object',
-					'default' => array(
+					'default' => [
 						'fontFamily' => 'Roboto',
-						'fontSize'   => array(
-							'units' => array( 'px', 'em', 'rem' ),
+						'fontSize'   => [
+							'units' => [ 'px', 'em', 'rem' ],
 							'activeUnit' => 'px',
-							'values' => array(
+							'values' => [
 								'desktop' => 20,
 								'tablet'  => 20,
 								'mobile'  => 20
-							)
-						),
+							]
+						],
 						'fontWeight' => 500,
-						'lineHeight' => array(
+						'lineHeight' => [
 							'activeUnit' => 'px',
-							'units'      => array( 'px' ),
-							'values'     => array(
+							'units'      => [ 'px' ],
+							'values'     => [
 								'desktop' => '28',
 								'tablet'  => '28',
 								'mobile'  => '28'
-							)
-						)
-					)
-				),
-				'metaTypo' => array(
+							]
+						]
+					]
+				],
+				'metaTypo' => [
 					'type' => 'object',
-					'default' => array(
+					'default' => [
 						'fontFamily' => 'Roboto',
-						'fontSize'   => array(
-							'units' => array( 'px', 'em', 'rem' ),
+						'fontSize'   => [
+							'units' => [ 'px', 'em', 'rem' ],
 							'activeUnit' => 'px',
-							'values' => array(
+							'values' => [
 								'desktop' => 12,
 								'tablet'  => 12,
 								'mobile'  => 12
-							)
-						),
+							]
+						],
 						'fontWeight' => 400,
-						'lineHeight' => array(
+						'lineHeight' => [
 							'activeUnit' => '',
-							'units'      => array( '' ),
-							'values'     => array(
+							'units'      => [ '' ],
+							'values'     => [
 								'desktop' => '1.2',
 								'tablet'  => '1.2',
 								'mobile'  => '1.2'
-							)
-						)
-					)
-				),
-				'contentTypo' => array(
+							]
+						]
+					]
+				],
+				'contentTypo' => [
 					'type' => 'object',
-					'default' => array(
+					'default' => [
 						'fontFamily' => 'Roboto',
-						'fontSize'   => array(
-							'units' => array( 'px', 'em', 'rem' ),
+						'fontSize'   => [
+							'units' => [ 'px', 'em', 'rem' ],
 							'activeUnit' => 'px',
-							'values' => array(
+							'values' => [
 								'desktop' => 14,
 								'tablet'  => 14,
 								'mobile'  => 14
-							)
-						),
+							]
+						],
 						'fontWeight' => 400,
-						'lineHeight' => array(
+						'lineHeight' => [
 							'activeUnit' => '',
-							'units'      => array( '' ),
-							'values'     => array(
+							'units'      => [ '' ],
+							'values'     => [
 								'desktop' => '1.2',
 								'tablet'  => '1.2',
 								'mobile'  => '1.2'
-							)
-						)
-					)
-				),
-				'padding' => array(
+							]
+						]
+					]
+				],
+				'padding' => [
 					'type' => 'object',
-					'default' => array(
+					'default' => [
 						'activeUnit'   => 'px',
 						'isLinkActive' => true,
-						'properties'   => array( 'top', 'right', 'bottom', 'left' ),
-						'responsiveViews' => array( 'desktop', 'tablet', 'mobile' ),
-						'units' => array( 'px', 'rem' ),
-						'values' => array(
-							'desktop' => array( 20, 20, 20, 20 ),
-							'tablet' => array( 20, 20, 20, 20 ),
-							'mobile' => array( 20, 20, 20, 20 ),
-						)  
-					)
-				),
+						'properties'   => [ 'top', 'right', 'bottom', 'left' ],
+						'responsiveViews' => [ 'desktop', 'tablet', 'mobile' ],
+						'units' => [ 'px', 'rem' ],
+						'values' => [
+							'desktop' => [ 20, 20, 20, 20 ],
+							'tablet' => [ 20, 20, 20, 20 ],
+							'mobile' => [ 20, 20, 20, 20 ],
+						]
+					]
+				],
 
-				'enableTitle' => array(
+				'enableTitle' => [
 					'type' => 'boolean',
 					'default' => true
-				),
-				'enableContent' => array(
+				],
+				'enableContent' => [
 					'type' => 'boolean',
 					'default' => false
-				),
-				'enableCategory' => array(
+				],
+				'enableCategory' => [
 					'type' => 'boolean',
 					'default' => true
-				),
-				'enableAuthor' => array(
+				],
+				'enableAuthor' => [
 					'type'    => 'boolean',
 					'default' => true
-				),
-				'enableDate' => array(
+				],
+				'enableDate' => [
 					'type'    => 'boolean',
 					'default' => true
-				),
-				'imageSize' => array(
+				],
+				'imageSize' => [
 					'type'    => 'string',
 					'default' => 'full'
-				),
+				],
 
-				'color' => array(
+				'color' => [
 					'type'    => 'string',
 					'default' => '#ffffff'
-				),
-				'bgColor' => array(
+				],
+				'bgColor' => [
 					'type'    => 'string',
 					'default' => '#0693e3'
-				),
-				'arrowBgColor' => array(
+				],
+				'arrowBgColor' => [
 					'type'    => 'string',
 					'default' => '#000000'
-				),
-				'arrowColor' => array(
+				],
+				'arrowColor' => [
 					'type'    => 'string',
 					'default' => '#ffffff'
-				),
-				'slidesToShow' => array(
+				],
+				'slidesToShow' => [
 					'type' => 'number',
 					'default' => 3
-				),
-				'excerptLength' => array(
+				],
+				'excerptLength' => [
 					'type' => 'number',
 					'default' => 20
-				)
-			);
+				]
+			];
 		}
 
 	   /**
@@ -522,10 +522,10 @@ if( !class_exists( 'Rise_Blocks_News_2' ) ){
 		public static function make_category_arr( $_cat ){
 			$cat = false;
 			if( $_cat ){
-				$cat = array(
+				$cat = [
 					'name' => $_cat->name,
 					'link' => get_category_link( $_cat->term_id )
-				);
+				];
 			}
 
 			return $cat;
@@ -533,20 +533,20 @@ if( !class_exists( 'Rise_Blocks_News_2' ) ){
 
 		public function get_query( $attrs ){
 
-			$args = array(
+			$args = [
 				'post_type'   => 'post',
 				'post_status' => 'publish',
 				'ignore_sticky_posts' => true,
 				'posts_per_page' => $attrs[ 'postsToShow' ],
 				'order' => $attrs[ 'order' ],
 				'orderby' => $attrs[ 'orderBy' ]
-			);
+			];
 			
 			if( isset( $attrs[ 'categories' ] ) ){
 				$args[ 'cat' ] = $attrs[ 'categories' ];
 			}
 			
-			$query = new WP_Query( apply_filters( self::add_prefix('%prefix_news_1_query'), $args ) );
+			$query = new WP_Query( apply_filters( self::add_prefix( '%prefix_news_1_query' ), $args ) );
 
 			return $query;
 		}
@@ -625,8 +625,8 @@ if( !class_exists( 'Rise_Blocks_News_2' ) ){
 		                            	<?php endif; ?>
 
 		                            	<?php if ($attrs['enableContent']): ?>
-											<div class="<?php self::add_prefix_e('%prefix-news-2-post-content');?>">
-												<?php self::excerpt($attrs['excerptLength']);?>
+											<div class="<?php self::add_prefix_e( '%prefix-news-2-post-content' );?>">
+												<?php self::excerpt( $attrs[ 'excerptLength' ] );?>
 											</div>
 										<?php endif;?>
 
